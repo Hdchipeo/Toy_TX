@@ -1,0 +1,508 @@
+0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xeets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug 24 2024 08:21:10[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1fdb0h (130480) map[0m
+[0;32mI (150) esp_image: segment 1: paddr=0002fdd8 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=0002fde4 vaddr=3ffb0000 size=00234h (   564) load[0m
+[0;32mI (156) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=80fb4h (528308) map[0m
+[0;32mI (345) esp_image: segment 4: paddr=000b0fdc vaddr=3ffb0234 size=039e8h ( 14824) load[0m
+[0;32mI (351) esp_image: segment 5: paddr=000b49cc vaddr=40080000 size=17940h ( 96576) load[0m
+[0;32mI (401) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (401) boot: Disabling RNG early entropy source...[0m
+[0;32mI (412) cpu_start: Multicore app[0m
+[0;32mI (421) cpu_start: Pro cpu start user code[0m
+[0;32mI (421) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (421) cpu_start: Application information:[0m
+[0;32mI (424) cpu_start: Project name:     espnow_example[0m
+[0;32mI (430) cpu_start: App version:      1[0m
+[0;32mI (434) cpu_start: Compile time:     Aug 24 2024 08:20:52[0m
+[0;32mI (440) cpu_start: ELF file SHA256:  aefd1cdc9...[0m
+[0;32mI (446) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (452) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (456) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (461) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (466) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (473) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (479) heap_init: At 3FFB7D50 len 000282B0 (160 KiB): DRAM[0m
+[0;32mI (485) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (492) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (498) heap_init: At 40097940 len 000086C0 (33 KiB): IRAM[0m
+[0;32mI (506) spi_flash: detected chip: generic[0m
+[0;32mI (509) spi_flash: flash io: dio[0m
+[0;33mW (513) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (527) main_task: Started on CPU0[0m
+[0;32mI (537) main_task: Calling app_main()[0m
+I (567) wifi:wifi driver task: 3ffbf8a0, prio:23, stack:6656, core=0
+I (567) wifi:wifi firmware version: 3e0076f
+I (567) wifi:wifi certification version: v7.0
+I (567) wifi:config NVS flash: enabled
+I (567) wifi:config nano formating: disabled
+I (577) wifi:Init data frame dynamic rx buffer num: 32
+I (577) wifi:Init static rx mgmt buffer num: 5
+I (587) wifi:Init management short buffer num: 32
+I (587) wifi:Init dynamic tx buffer num: 32
+I (587) wifi:Init static rx buffer size: 1600
+I (597) wifi:Init static rx buffer num: 10
+I (597) wifi:Init dynamic rx buffer num: 32
+[0;32mI (607) wifi_init: rx ba win: 6[0m
+[0;32mI (607) wifi_init: tcpip mbox: 32[0m
+[0;32mI (607) wifi_init: udp mbox: 6[0m
+[0;32mI (617) wifi_init: tcp mbox: 6[0m
+[0;32mI (617) wifi_init: tcp tx win: 5760[0m
+[0;32mI (617) wifi_init: tcp rx win: 5760[0m
+[0;32mI (627) wifi_init: tcp mss: 1440[0m
+[0;32mI (627) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (637) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (637) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (737) wifi:mode : sta (e4:65:b8:11:7f:9c)
+I (737) wifi:enable tsf
+I (737) ESPNOW: espnow [version: 1.0] init
+[0;32mI (747) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Waiting for GPIO4 to go high...
+[0;32mI (11727) espnow_example: gpio wakeup source is ready[0m
+[0;32mI (11727) espnow_example: GPIO15 = 0[0m
+[0;32mI (11827) espnow_example: GPIO15 = 0[0m
+[0;32mI (11927) espnow_example: GPIO15 = 0[0m
+[0;32mI (12027) espnow_example: GPIO15 = 0[0m
+[0;32mI (12127) espnow_example: GPIO15 = 1[0m
+[0;32mI (12227) espnow_example: GPIO15 = 1[0m
+[0;32mI (12327) espnow_example: GPIO15 = 1[0m
+[0;32mI (12427) espnow_example: GPIO15 = 1[0m
+[0;32mI (12527) espnow_example: GPIO15 = 1[0m
+[0;32mI (12627) espnow_example: GPIO15 = 1[0m
+[0;32mI (12727) espnow_example: GPIO15 = 1[0m
+[0;32mI (12827) espnow_example: GPIO15 = 1[0m
+[0;32mI (12927) espnow_example: GPIO15 = 1[0m
+[0;32mI (13027) espnow_example: GPIO15 = 1[0m
+[0;32mI (13127) espnow_example: GPIO15 = 1[0m
+[0;32mI (13227) espnow_example: GPIO15 = 1[0m
+[0;32mI (13327) espnow_example: GPIO15 = 1[0m
+[0;32mI (13427) espnow_example: GPIO15 = 1[0m
+[0;32mI (13527) espnow_example: GPIO15 = 1[0m
+[0;32mI (13627) espnow_example: GPIO15 = 1[0m
+[0;32mI (13727) espnow_example: GPIO15 = 1[0m
+[0;32mI (13827) espnow_example: GPIO15 = 1[0m
+[0;32mI (13927) espnow_example: GPIO15 = 1[0m
+[0;32mI (14027) espnow_example: GPIO15 = 1[0m
+[0;32mI (14127) espnow_example: GPIO15 = 1[0m
+[0;32mI (14227) espnow_example: GPIO15 = 1[0m
+[0;32mI (14327) espnow_example: GPIO15 = 1[0m
+[0;32mI (14427) espnow_example: GPIO15 = 1[0m
+[0;32mI (14527) espnow_example: GPIO15 = 1[0m
+[0;32mI (14627) espnow_example: GPIO15 = 1[0m
+[0;32mI (14727) espnow_example: GPIO15 = 1[0m
+[0;32mI (14827) espnow_example: GPIO15 = 1[0m
+[0;32mI (14927) espnow_example: GPIO15 = 1[0m
+[0;32mI (15027) espnow_example: GPIO15 = 1[0m
+[0;32mI (15127) espnow_example: GPIO15 = 1[0m
+[0;32mI (15227) espnow_example: GPIO15 = 1[0m
+[0;32mI (15327) espnow_example: GPIO15 = 1[0m
+[0;32mI (15427) espnow_example: GPIO15 = 1[0m
+[0;32mI (15527) espnow_example: GPIO15 = 1[0m
+[0;32mI (15627) espnow_example: GPIO15 = 1[0m
+[0;32mI (15727) espnow_example: GPIO15 = 1[0m
+[0;32mI (15827) espnow_example: GPIO15 = 1[0m
+[0;32mI (15927) espnow_example: GPIO15 = 1[0m
+[0;32mI (16027) espnow_example: GPIO15 = 1[0m
+[0;32mI (16127) espnow_example: GPIO15 = 1[0m
+[0;32mI (16227) espnow_example: GPIO15 = 1[0m
+[0;32mI (16327) espnow_example: GPIO15 = 1[0m
+[0;32mI (16427) espnow_example: GPIO15 = 1[0m
+[0;32mI (16527) espnow_example: GPIO15 = 1[0m
+[0;32mI (16627) espnow_example: GPIO15 = 1[0m
+[0;32mI (16727) espnow_example: GPIO15 = 1[0m
+[0;32mI (16827) espnow_example: GPIO15 = 1[0m
+[0;32mI (16927) espnow_example: GPIO15 = 1[0m
+[0;32mI (17027) espnow_example: GPIO15 = 1[0m
+[0;32mI (17127) espnow_example: GPIO15 = 1[0m
+[0;32mI (17227) espnow_example: GPIO15 = 1[0m
+[0;32mI (17327) espnow_example: GPIO15 = 1[0m
+[0;32mI (17427) espnow_example: GPIO15 = 1[0m
+[0;32mI (17527) espnow_example: GPIO15 = 1[0m
+[0;32mI (17627) espnow_example: GPIO15 = 1[0m
+[0;32mI (17727) espnow_example: GPIO15 = 1[0m
+[0;32mI (17827) espnow_example: GPIO15 = 1[0m
+[0;32mI (17927) espnow_example: GPIO15 = 1[0m
+[0;32mI (18027) espnow_example: GPIO15 = 1[0m
+[0;32mI (18127) espnow_example: GPIO15 = 1[0m
+[0;32mI (18227) espnow_example: GPIO15 = 1[0m
+[0;32mI (18327) espnow_example: GPIO15 = 1[0m
+[0;32mI (18427) espnow_example: GPIO15 = 1[0m
+[0;32mI (18527) espnow_example: GPIO15 = 1[0m
+[0;32mI (18627) espnow_example: GPIO15 = 1[0m
+[0;32mI (18727) espnow_example: GPIO15 = 1[0m
+[0;32mI (18827) espnow_example: GPIO15 = 1[0m
+[0;32mI (18927) espnow_example: GPIO15 = 1[0m
+[0;32mI (19027) espnow_example: GPIO15 = 1[0m
+[0;32mI (19127) espnow_example: GPIO15 = 1[0m
+[0;32mI (19227) espnow_example: GPIO15 = 1[0m
+[0;32mI (19327) espnow_example: GPIO15 = 1[0m
+[0;32mI (19427) espnow_example: GPIO15 = 1[0m
+[0;32mI (19527) espnow_example: GPIO15 = 1[0m
+[0;32mI (19627) espnow_example: GPIO15 = 1[0m
+[0;32mI (19727) espnow_example: GPIO15 = 1[0m
+[0;32mI (19827) espnow_example: GPIO15 = 1[0m
+[0;32mI (19927) espnow_example: GPIO15 = 1[0m
+[0;32mI (20027) espnow_example: GPIO15 = 1[0m
+[0;32mI (20127) espnow_example: GPIO15 = 1[0m
+[0;32mI (20227) espnow_example: GPIO15 = 1[0m
+[0;32mI (20327) espnow_example: GPIO15 = 1[0m
+[0;32mI (20427) espnow_example: GPIO15 = 1[0m
+[0;32mI (20527) espnow_example: GPIO15 = 1[0m
+[0;32mI (20627) espnow_example: GPIO15 = 1[0m
+[0;32mI (20727) espnow_example: GPIO15 = 1[0m
+[0;32mI (20827) espnow_example: GPIO15 = 1[0m
+[0;32mI (20927) espnow_example: GPIO15 = 1[0m
+[0;32mI (21027) espnow_example: GPIO15 = 1[0m
+[0;32mI (21127) espnow_example: GPIO15 = 1[0m
+[0;32mI (21227) espnow_example: GPIO15 = 1[0m
+[0;32mI (21327) espnow_example: GPIO15 = 1[0m
+[0;32mI (21427) espnow_example: GPIO15 = 1[0m
+[0;32mI (21527) espnow_example: GPIO15 = 1[0m
+[0;32mI (21627) espnow_example: GPIO15 = 1[0m
+[0;32mI (21727) espnow_example: GPIO15 = 1[0m
+[0;32mI (21827) espnow_example: GPIO15 = 1[0m
+[0;32mI (21927) espnow_example: GPIO15 = 1[0m
+[0;32mI (22027) espnow_example: GPIO15 = 1[0m
+[0;32mI (22127) espnow_example: GPIO15 = 1[0m
+[0;32mI (22227) espnow_example: GPIO15 = 1[0m
+[0;32mI (22327) espnow_example: GPIO15 = 1[0m
+[0;32mI (22427) espnow_example: GPIO15 = 1[0m
+[0;32mI (22527) espnow_example: GPIO15 = 1[0m
+[0;32mI (22627) espnow_example: GPIO15 = 1[0m
+[0;32mI (22727) espnow_example: GPIO15 = 1[0m
+[0;32mI (22827) espnow_example: GPIO15 = 1[0m
+[0;32mI (22927) espnow_example: GPIO15 = 1[0m
+[0;32mI (23027) espnow_example: GPIO15 = 1[0m
+[0;32mI (23127) espnow_example: GPIO15 = 1[0m
+[0;32mI (23227) espnow_example: GPIO15 = 1[0m
+[0;32mI (23327) espnow_example: GPIO15 = 1[0m
+[0;32mI (23427) espnow_example: GPIO15 = 1[0m
+[0;32mI (23527) espnow_example: GPIO15 = 1[0m
+[0;32mI (23627) espnow_example: GPIO15 = 1[0m
+[0;32mI (23727) espnow_example: GPIO15 = 1[0m
+[0;32mI (23827) espnow_example: GPIO15 = 1[0m
+[0;32mI (23927) espnow_example: GPIO15 = 1[0m
+[0;32mI (24027) espnow_example: GPIO15 = 1[0m
+[0;32mI (24127) espnow_example: GPIO15 = 1[0m
+[0;32mI (24227) espnow_example: GPIO15 = 1[0m
+[0;32mI (24327) espnow_example: GPIO15 = 1[0m
+[0;32mI (24427) espnow_example: GPIO15 = 1[0m
+[0;32mI (24527) espnow_example: GPIO15 = 1[0m
+[0;32mI (24627) espnow_example: GPIO15 = 1[0m
+[0;32mI (24727) espnow_example: GPIO15 = 1[0m
+[0;32mI (24827) espnow_example: GPIO15 = 1[0m
+[0;32mI (24927) espnow_example: GPIO15 = 1[0m
+[0;32mI (25027) espnow_example: GPIO15 = 1[0m
+[0;32mI (25127) espnow_example: GPIO15 = 1[0m
+[0;32mI (25227) espnow_example: GPIO15 = 1[0m
+[0;32mI (25327) espnow_example: GPIO15 = 1[0m
+[0;32mI (25427) espnow_example: GPIO15 = 1[0m
+[0;32mI (25527) espnow_example: GPIO15 = 1[0m
+[0;32mI (25627) espnow_example: GPIO15 = 1[0m
+[0;32mI (25727) espnow_example: GPIO15 = 1[0m
+[0;32mI (25827) espnow_example: GPIO15 = 1[0m
+[0;32mI (25927) espnow_example: GPIO15 = 1[0m
+[0;32mI (26027) espnow_example: GPIO15 = 1[0m
+[0;32mI (26127) espnow_example: GPIO15 = 1[0m
+[0;32mI (26227) espnow_example: GPIO15 = 1[0m
+[0;32mI (26327) espnow_example: GPIO15 = 1[0m
+[0;32mI (26427) espnow_example: GPIO15 = 1[0m
+[0;32mI (26527) espnow_example: GPIO15 = 1[0m
+[0;32mI (26627) espnow_example: GPIO15 = 1[0m
+[0;32mI (26727) espnow_example: GPIO15 = 1[0m
+[0;32mI (26827) espnow_example: GPIO15 = 1[0m
+[0;32mI (26927) espnow_example: GPIO15 = 1[0m
+[0;32mI (27027) espnow_example: GPIO15 = 1[0m
+[0;32mI (27127) espnow_example: GPIO15 = 1[0m
+[0;32mI (27227) espnow_example: GPIO15 = 1[0m
+[0;32mI (27327) espnow_example: GPIO15 = 1[0m
+[0;32mI (27427) espnow_example: GPIO15 = 1[0m
+[0;32mI (27527) espnow_example: GPIO15 = 1[0m
+[0;32mI (27627) espnow_example: GPIO15 = 1[0m
+[0;32mI (27727) espnow_example: GPIO15 = 1[0m
+[0;32mI (27827) espnow_example: GPIO15 = 1[0m
+[0;32mI (27927) espnow_example: GPIO15 = 1[0m
+[0;32mI (28027) espnow_example: GPIO15 = 1[0m
+[0;32mI (28127) espnow_example: GPIO15 = 1[0m
+[0;32mI (28227) espnow_example: GPIO15 = 1[0m
+[0;32mI (28327) espnow_example: GPIO15 = 1[0m
+[0;32mI (28427) espnow_example: GPIO15 = 1[0m
+[0;32mI (28527) espnow_example: GPIO15 = 1[0m
+[0;32mI (28627) espnow_example: GPIO15 = 1[0m
+[0;32mI (28727) espnow_example: GPIO15 = 1[0m
+[0;32mI (28827) espnow_example: GPIO15 = 1[0m
+[0;32mI (28927) espnow_example: GPIO15 = 1[0m
+[0;32mI (29027) espnow_example: GPIO15 = 1[0m
+[0;32mI (29127) espnow_example: GPIO15 = 1[0m
+[0;32mI (29227) espnow_example: GPIO15 = 1[0m
+[0;32mI (29327) espnow_example: GPIO15 = 1[0m
+[0;32mI (29427) espnow_example: GPIO15 = 1[0m
+[0;32mI (29527) espnow_example: GPIO15 = 1[0m
+[0;32mI (29627) espnow_example: GPIO15 = 1[0m
+[0;32mI (29727) espnow_example: GPIO15 = 1[0m
+[0;32mI (29827) espnow_example: GPIO15 = 1[0m
+[0;32mI (29927) espnow_example: GPIO15 = 1[0m
+[0;32mI (30027) espnow_example: GPIO15 = 1[0m
+[0;32mI (30127) espnow_example: GPIO15 = 1[0m
+[0;32mI (30227) espnow_example: GPIO15 = 1[0m
+[0;32mI (30327) espnow_example: GPIO15 = 1[0m
+[0;32mI (30427) espnow_example: GPIO15 = 1[0m
+[0;32mI (30527) espnow_example: GPIO15 = 1[0m
+[0;32mI (30627) espnow_example: GPIO15 = 1[0m
+[0;32mI (30727) espnow_example: GPIO15 = 1[0m
+[0;32mI (30827) espnow_example: GPIO15 = 1[0m
+[0;32mI (30927) espnow_example: GPIO15 = 1[0m
+[0;32mI (31027) espnow_example: GPIO15 = 1[0m
+[0;32mI (31127) espnow_example: GPIO15 = 1[0m
+[0;32mI (31227) espnow_example: GPIO15 = 1[0m
+[0;32mI (31327) espnow_example: GPIO15 = 1[0m
+[0;32mI (31427) espnow_example: GPIO15 = 1[0m
+[0;32mI (31527) espnow_example: GPIO15 = 1[0m
+[0;32mI (31627) espnow_example: GPIO15 = 1[0m
+[0;32mI (31727) espnow_example: GPIO15 = 1[0m
+[0;32mI (31827) espnow_example: GPIO15 = 1[0m
+[0;32mI (31927) espnow_example: GPIO15 = 1[0m
+[0;32mI (32027) espnow_example: GPIO15 = 1[0m
+[0;32mI (32127) espnow_example: GPIO15 = 1[0m
+[0;32mI (32227) espnow_example: GPIO15 = 1[0m
+[0;32mI (32327) espnow_example: GPIO15 = 1[0m
+[0;32mI (32427) espnow_example: GPIO15 = 1[0m
+[0;32mI (32527) espnow_example: GPIO15 = 1[0m
+[0;32mI (32627) espnow_example: GPIO15 = 1[0m
+[0;32mI (32727) espnow_example: GPIO15 = 1[0m
+[0;32mI (32827) espnow_example: GPIO15 = 1[0m
+[0;32mI (32927) espnow_example: GPIO15 = 1[0m
+[0;32mI (33027) espnow_example: GPIO15 = 1[0m
+[0;32mI (33127) espnow_example: GPIO15 = 1[0m
+[0;32mI (33227) espnow_example: GPIO15 = 1[0m
+[0;32mI (33327) espnow_example: GPIO15 = 1[0m
+[0;32mI (33427) espnow_example: GPIO15 = 1[0m
+[0;32mI (33527) espnow_example: GPIO15 = 1[0m
+[0;32mI (33627) espnow_example: GPIO15 = 1[0m
+[0;32mI (33727) espnow_example: GPIO15 = 1[0m
+[0;32mI (33827) espnow_example: GPIO15 = 1[0m
+[0;32mI (33927) espnow_example: GPIO15 = 1[0m
+[0;32mI (34027) espnow_example: GPIO15 = 1[0m
+[0;32mI (34127) espnow_example: GPIO15 = 1[0m
+[0;32mI (34227) espnow_example: GPIO15 = 1[0m
+[0;32mI (34327) espnow_example: GPIO15 = 1[0m
+[0;32mI (34427) espnow_example: GPIO15 = 1[0m
+[0;32mI (34527) espnow_example: GPIO15 = 1[0m
+[0;32mI (34627) espnow_example: GPIO15 = 1[0m
+[0;32mI (34727) espnow_example: GPIO15 = 1[0m
+[0;32mI (34827) espnow_example: GPIO15 = 1[0m
+[0;32mI (34927) espnow_example: GPIO15 = 1[0m
+[0;32mI (35027) espnow_example: GPIO15 = 1[0m
+[0;32mI (35127) espnow_example: GPIO15 = 1[0m
+[0;32mI (35227) espnow_example: GPIO15 = 1[0m
+[0;32mI (35327) espnow_example: GPIO15 = 1[0m
+[0;32mI (35427) espnow_example: GPIO15 = 1[0m
+[0;32mI (35527) espnow_example: GPIO15 = 1[0m
+[0;32mI (35627) espnow_example: GPIO15 = 1[0m
+[0;32mI (35727) espnow_example: GPIO15 = 1[0m
+[0;32mI (35827) espnow_example: GPIO15 = 1[0m
+[0;32mI (35927) espnow_example: GPIO15 = 1[0m
+[0;32mI (36027) espnow_example: GPIO15 = 1[0m
+[0;32mI (36127) espnow_example: GPIO15 = 1[0m
+[0;32mI (36227) espnow_example: GPIO15 = 1[0m
+[0;32mI (36327) espnow_example: GPIO15 = 1[0m
+[0;32mI (36427) espnow_example: GPIO15 = 1[0m
+[0;32mI (36527) espnow_example: GPIO15 = 1[0m
+[0;32mI (36627) espnow_example: GPIO15 = 1[0m
+[0;32mI (36727) espnow_example: GPIO15 = 1[0m
+[0;32mI (36827) espnow_example: GPIO15 = 1[0m
+[0;32mI (36927) espnow_example: GPIO15 = 1[0m
+[0;32mI (37027) espnow_example: GPIO15 = 1[0m
+[0;32mI (37127) espnow_example: GPIO15 = 1[0m
+[0;32mI (37227) espnow_example: GPIO15 = 1[0m
+[0;32mI (37327) espnow_example: GPIO15 = 1[0m
+[0;32mI (37427) espnow_example: GPIO15 = 1[0m
+[0;32mI (37527) espnow_example: GPIO15 = 1[0m
+[0;32mI (37627) espnow_example: GPIO15 = 1[0m
+[0;32mI (37727) espnow_example: GPIO15 = 1[0m
+[0;32mI (37827) espnow_example: GPIO15 = 1[0m
+[0;32mI (37927) espnow_example: GPIO15 = 1[0m
+[0;32mI (38027) espnow_example: GPIO15 = 1[0m
+[0;32mI (38127) espnow_example: GPIO15 = 1[0m
+[0;32mI (38227) espnow_example: GPIO15 = 1[0m
+[0;32mI (38327) espnow_example: GPIO15 = 1[0m
+[0;32mI (38427) espnow_example: GPIO15 = 1[0m
+[0;32mI (38527) espnow_example: GPIO15 = 1[0m
+[0;32mI (38627) espnow_example: GPIO15 = 1[0m
+[0;32mI (38727) espnow_example: GPIO15 = 1[0m
+[0;32mI (38827) espnow_example: GPIO15 = 1[0m
+[0;32mI (38927) espnow_example: GPIO15 = 1[0m
+[0;32mI (39027) espnow_example: GPIO15 = 1[0m
+[0;32mI (39127) espnow_example: GPIO15 = 1[0m
+[0;32mI (39227) espnow_example: GPIO15 = 1[0m
+[0;32mI (39327) espnow_example: GPIO15 = 1[0m
+[0;32mI (39427) espnow_example: GPIO15 = 1[0m
+[0;32mI (39527) espnow_example: GPIO15 = 1[0m
+[0;32mI (39627) espnow_example: GPIO15 = 1[0m
+[0;32mI (39727) espnow_example: GPIO15 = 1[0m
+[0;32mI (39827) espnow_example: GPIO15 = 1[0m
+[0;32mI (39927) espnow_example: GPIO15 = 1[0m
+[0;32mI (40027) espnow_example: GPIO15 = 1[0m
+[0;32mI (40127) espnow_example: GPIO15 = 1[0m
+[0;32mI (40227) espnow_example: GPIO15 = 1[0m
+[0;32mI (40327) espnow_example: GPIO15 = 1[0m
+[0;32mI (40427) espnow_example: GPIO15 = 1[0m
+[0;32mI (40527) espnow_example: GPIO15 = 1[0m
+[0;32mI (40627) espnow_example: GPIO15 = 1[0m
+[0;32mI (40727) espnow_example: GPIO15 = 1[0m
+[0;32mI (40827) espnow_example: GPIO15 = 1[0m
+[0;32mI (40927) espnow_example: GPIO15 = 1[0m
+[0;32mI (41027) espnow_example: GPIO15 = 1[0m
+[0;32mI (41127) espnow_example: GPIO15 = 1[0m
+[0;32mI (41227) espnow_example: GPIO15 = 1[0m
+[0;32mI (41327) espnow_example: GPIO15 = 1[0m
+[0;32mI (41427) espnow_example: GPIO15 = 1[0m
+[0;32mI (41527) espnow_example: GPIO15 = 1[0m
+[0;32mI (41627) espnow_example: GPIO15 = 1[0m
+[0;32mI (41727) espnow_example: GPIO15 = 1[0m
+[0;32mI (41827) espnow_example: GPIO15 = 1[0m
+[0;32mI (41927) espnow_example: GPIO15 = 1[0m
+[0;32mI (42027) espnow_example: GPIO15 = 1[0m
+[0;32mI (42127) espnow_example: GPIO15 = 1[0m
+[0;32mI (42227) espnow_example: GPIO15 = 1[0m
+[0;32mI (42327) espnow_example: GPIO15 = 1[0m
+[0;32mI (42427) espnow_example: GPIO15 = 1[0m
+[0;32mI (42527) espnow_example: GPIO15 = 1[0m
+[0;32mI (42627) espnow_example: GPIO15 = 1[0m
+[0;32mI (42727) espnow_example: GPIO15 = 1[0m
+[0;32mI (42827) espnow_example: GPIO15 = 1[0m
+[0;32mI (42927) espnow_example: GPIO15 = 1[0m
+[0;32mI (43027) espnow_example: GPIO15 = 1[0m
+[0;32mI (43127) espnow_example: GPIO15 = 1[0m
+[0;32mI (43227) espnow_example: GPIO15 = 1[0m
+[0;32mI (43327) espnow_example: GPIO15 = 1[0m
+[0;32mI (43427) espnow_example: GPIO15 = 1[0m
+[0;32mI (43527) espnow_example: GPIO15 = 1[0m
+[0;32mI (43627) espnow_example: GPIO15 = 1[0m
+[0;32mI (43727) espnow_example: GPIO15 = 1[0m
+[0;32mI (43827) espnow_example: GPIO15 = 1[0m
+[0;32mI (43927) espnow_example: GPIO15 = 1[0m
+[0;32mI (44027) espnow_example: GPIO15 = 1[0m
+[0;32mI (44127) espnow_example: GPIO15 = 1[0m
+[0;32mI (44227) espnow_example: GPIO15 = 1[0m
+[0;32mI (44327) espnow_example: GPIO15 = 1[0m
+[0;32mI (44427) espnow_example: GPIO15 = 1[0m
+[0;32mI (44527) espnow_example: GPIO15 = 1[0m
+[0;32mI (44627) espnow_example: GPIO15 = 1[0m
+[0;32mI (44727) espnow_example: GPIO15 = 1[0m
+[0;32mI (44827) espnow_example: GPIO15 = 1[0m
+[0;32mI (44927) espnow_example: GPIO15 = 1[0m
+[0;32mI (45027) espnow_example: GPIO15 = 1[0m
+[0;32mI (45127) espnow_example: GPIO15 = 1[0m
+[0;32mI (45227) espnow_example: GPIO15 = 1[0m
+[0;32mI (45327) espnow_example: GPIO15 = 1[0m
+[0;32mI (45427) espnow_example: GPIO15 = 1[0m
+[0;32mI (45527) espnow_example: GPIO15 = 1[0m
+[0;32mI (45627) espnow_example: GPIO15 = 1[0m
+[0;32mI (45727) espnow_example: GPIO15 = 1[0m
+[0;32mI (45827) espnow_example: GPIO15 = 1[0m
+[0;32mI (45927) espnow_example: GPIO15 = 1[0m
+[0;32mI (46027) espnow_example: GPIO15 = 1[0m
+[0;32mI (46127) espnow_example: GPIO15 = 1[0m
+[0;32mI (46227) espnow_example: GPIO15 = 1[0m
+[0;32mI (46327) espnow_example: GPIO15 = 1[0m
+[0;32mI (46427) espnow_example: GPIO15 = 1[0m
+[0;32mI (46527) espnow_example: GPIO15 = 1[0m
+[0;32mI (46627) espnow_example: GPIO15 = 1[0m
+[0;32mI (46727) espnow_example: GPIO15 = 1[0m
+[0;32mI (46827) espnow_example: GPIO15 = 1[0m
+[0;32mI (46927) espnow_example: GPIO15 = 1[0m
+[0;32mI (47027) espnow_example: GPIO15 = 1[0m
+[0;32mI (47127) espnow_example: GPIO15 = 1[0m
+[0;32mI (47227) espnow_example: GPIO15 = 1[0m
+[0;32mI (47327) espnow_example: GPIO15 = 1[0m
+[0;32mI (47427) espnow_example: GPIO15 = 1[0m
+[0;32mI (47527) espnow_example: GPIO15 = 1[0m
+[0;32mI (47627) espnow_example: GPIO15 = 1[0m
+[0;32mI (47727) espnow_example: GPIO15 = 1[0m
+[0;32mI (47827) espnow_example: GPIO15 = 1[0m
+[0;32mI (47927) espnow_example: GPIO15 = 1[0m
+[0;32mI (48027) espnow_example: GPIO15 = 1[0m
+[0;32mI (48127) espnow_example: GPIO15 = 1[0m
+[0;32mI (48227) espnow_example: GPIO15 = 1[0m
+[0;32mI (48327) espnow_example: GPIO15 = 1[0m
+[0;32mI (48427) espnow_example: GPIO15 = 1[0m
+[0;32mI (48527) espnow_example: GPIO15 = 1[0m
+[0;32mI (48627) espnow_example: GPIO15 = 1[0m
+[0;32mI (48727) espnow_example: GPIO15 = 1[0m
+[0;32mI (48827) espnow_example: GPIO15 = 1[0m
+[0;32mI (48927) espnow_example: GPIO15 = 1[0m
+[0;32mI (49027) espnow_example: GPIO15 = 1[0m
+[0;32mI (49127) espnow_example: GPIO15 = 1[0m
+[0;32mI (49227) espnow_example: GPIO15 = 1[0m
+[0;32mI (49327) espnow_example: GPIO15 = 1[0m
+[0;32mI (49427) espnow_example: GPIO15 = 1[0m
+[0;32mI (49527) espnow_example: GPIO15 = 1[0m
+[0;32mI (49627) espnow_example: GPIO15 = 1[0m
+[0;32mI (49727) espnow_example: GPIO15 = 1[0m
+[0;32mI (49827) espnow_example: GPIO15 = 1[0m
+[0;32mI (49927) espnow_example: GPIO15 = 1[0m
+[0;32mI (50027) espnow_example: GPIO15 = 1[0m
+[0;32mI (50127) espnow_example: GPIO15 = 1[0m
+[0;32mI (50227) espnow_example: GPIO15 = 1[0m
+[0;32mI (50327) espnow_example: GPIO15 = 1[0m
+[0;32mI (50427) espnow_example: GPIO15 = 1[0m
+[0;32mI (50527) espnow_example: GPIO15 = 1[0m
+[0;32mI (50627) espnow_example: GPIO15 = 1[0m
+[0;32mI (50727) espnow_example: GPIO15 = 1[0m
+[0;32mI (50827) espnow_example: GPIO15 = 1[0m
+[0;32mI (50927) espnow_example: GPIO15 = 1[0m
+[0;32mI (51027) espnow_example: GPIO15 = 1[0m
+[0;32mI (51127) espnow_example: GPIO15 = 1[0m
+[0;32mI (51227) espnow_example: GPIO15 = 1[0m
+[0;32mI (51327) espnow_example: GPIO15 = 1[0m
+[0;32mI (51427) espnow_example: GPIO15 = 1[0m
+[0;32mI (51527) espnow_example: GPIO15 = 1[0m
+[0;32mI (51627) espnow_example: GPIO15 = 1[0m
+[0;32mI (51727) espnow_example: GPIO15 = 1[0m
+[0;32mI (51827) espnow_example: GPIO15 = 1[0m
+[0;32mI (51927) espnow_example: GPIO15 = 1[0m
+[0;32mI (52027) espnow_example: GPIO15 = 1[0m
+[0;32mI (52127) espnow_example: GPIO15 = 1[0m
+[0;32mI (52227) espnow_example: GPIO15 = 1[0m
+[0;32mI (52327) espnow_example: GPIO15 = 1[0m
+[0;32mI (52427) espnow_example: GPIO15 = 1[0m
+[0;32mI (52527) espnow_example: GPIO15 = 1[0m
+[0;32mI (52627) espnow_example: GPIO15 = 1[0m
+[0;32mI (52727) espnow_example: GPIO15 = 1[0m
+[0;32mI (52827) espnow_example: GPIO15 = 1[0m
+[0;32mI (52927) espnow_example: GPIO15 = 1[0m
+[0;32mI (53027) espnow_example: GPIO15 = 1[0m
+[0;32mI (53127) espnow_example: GPIO15 = 1[0m
+[0;32mI (53227) espnow_example: GPIO15 = 1[0m
+[0;32mI (53327) espnow_example: GPIO15 = 1[0m
+[0;32mI (53427) espnow_example: GPIO15 = 1[0m
+[0;32mI (53527) espnow_example: GPIO15 = 1[0m
+[0;32mI (53627) espnow_example: GPIO15 = 1[0m
+[0;32mI (53727) espnow_example: GPIO15 = 1[0m
+[0;32mI (53827) espnow_example: GPIO15 = 1[0m

@@ -1,0 +1,1459 @@
+0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xeets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug 24 2024 08:21:10[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1ed20h (126240) map[0m
+[0;32mI (149) esp_image: segment 1: paddr=0002ed48 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (149) esp_image: segment 2: paddr=0002ed54 vaddr=3ffb0000 size=012c4h (  4804) load[0m
+[0;32mI (156) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=7f284h (520836) map[0m
+[0;32mI (341) esp_image: segment 4: paddr=000af2ac vaddr=3ffb12c4 size=028a0h ( 10400) load[0m
+[0;32mI (345) esp_image: segment 5: paddr=000b1b54 vaddr=40080000 size=167d8h ( 92120) load[0m
+[0;32mI (394) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (394) boot: Disabling RNG early entropy source...[0m
+[0;32mI (406) cpu_start: Multicore app[0m
+[0;32mI (415) cpu_start: Pro cpu start user code[0m
+[0;32mI (415) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (415) cpu_start: Application information:[0m
+[0;32mI (418) cpu_start: Project name:     espnow_example[0m
+[0;32mI (423) cpu_start: App version:      1[0m
+[0;32mI (428) cpu_start: Compile time:     Aug 24 2024 08:20:52[0m
+[0;32mI (434) cpu_start: ELF file SHA256:  603480a4c...[0m
+[0;32mI (439) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (445) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (450) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (455) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (460) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (467) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (473) heap_init: At 3FFB7C60 len 000283A0 (160 KiB): DRAM[0m
+[0;32mI (479) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (485) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (492) heap_init: At 400967D8 len 00009828 (38 KiB): IRAM[0m
+[0;32mI (499) spi_flash: detected chip: generic[0m
+[0;32mI (503) spi_flash: flash io: dio[0m
+[0;33mW (506) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (520) main_task: Started on CPU0[0m
+[0;32mI (530) main_task: Calling app_main()[0m
+I (560) wifi:wifi driver task: 3ffbf7b0, prio:23, stack:6656, core=0
+I (560) wifi:wifi firmware version: 3e0076f
+I (560) wifi:wifi certification version: v7.0
+I (560) wifi:config NVS flash: enabled
+I (560) wifi:config nano formating: disabled
+I (570) wifi:Init data frame dynamic rx buffer num: 32
+I (570) wifi:Init static rx mgmt buffer num: 5
+I (580) wifi:Init management short buffer num: 32
+I (580) wifi:Init dynamic tx buffer num: 32
+I (580) wifi:Init static rx buffer size: 1600
+I (590) wifi:Init static rx buffer num: 10
+I (590) wifi:Init dynamic rx buffer num: 32
+[0;32mI (600) wifi_init: rx ba win: 6[0m
+[0;32mI (600) wifi_init: tcpip mbox: 32[0m
+[0;32mI (600) wifi_init: udp mbox: 6[0m
+[0;32mI (610) wifi_init: tcp mbox: 6[0m
+[0;32mI (610) wifi_init: tcp tx win: 5760[0m
+[0;32mI (610) wifi_init: tcp rx win: 5760[0m
+[0;32mI (620) wifi_init: tcp mss: 1440[0m
+[0;32mI (620) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (630) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (630) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (730) wifi:mode : sta (e4:65:b8:11:7f:9c)
+I (730) wifi:enable tsf
+I (740) ESPNOW: espnow [version: 1.0] init
+[0;32mI (740) espnow_example: adc_raw2 = 1723[0m
+[0;32mI (770) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (840) espnow_example: adc_raw2 = 1718[0m
+[0;32mI (860) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (940) espnow_example: adc_raw2 = 1709[0m
+[0;32mI (970) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (1040) espnow_example: adc_raw2 = 1707[0m
+[0;32mI (1050) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (1140) espnow_example: adc_raw2 = 1717[0m
+[0;32mI (1160) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (1240) espnow_example: adc_raw2 = 1718[0m
+[0;32mI (1260) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (1340) espnow_example: adc_raw2 = 1719[0m
+[0;32mI (1350) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (1440) espnow_example: adc_raw2 = 1712[0m
+[0;32mI (1450) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (1540) espnow_example: adc_raw2 = 1713[0m
+[0;32mI (1550) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (1640) espnow_example: adc_raw2 = 1714[0m
+[0;32mI (1660) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (1740) espnow_example: adc_raw2 = 1727[0m
+[0;32mI (1760) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (1840) espnow_example: adc_raw2 = 1712[0m
+[0;32mI (1860) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (1940) espnow_example: adc_raw2 = 1639[0m
+[0;32mI (1960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (2040) espnow_example: adc_raw2 = 1728[0m
+[0;32mI (2060) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (2140) espnow_example: adc_raw2 = 1718[0m
+[0;32mI (2170) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (2240) espnow_example: adc_raw2 = 1707[0m
+[0;32mI (2260) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (2340) espnow_example: adc_raw2 = 1712[0m
+[0;32mI (2360) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (2440) espnow_example: adc_raw2 = 1712[0m
+[0;32mI (2460) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (2540) espnow_example: adc_raw2 = 1704[0m
+[0;32mI (2570) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (2640) espnow_example: adc_raw2 = 1711[0m
+[0;32mI (2650) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (2740) espnow_example: adc_raw2 = 1725[0m
+[0;32mI (2760) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (2840) espnow_example: adc_raw2 = 1734[0m
+[0;32mI (2850) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (2940) espnow_example: adc_raw2 = 1714[0m
+[0;32mI (2950) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (3040) espnow_example: adc_raw2 = 1734[0m
+[0;32mI (3060) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (3140) espnow_example: adc_raw2 = 1713[0m
+[0;32mI (3150) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (3240) espnow_example: adc_raw2 = 1719[0m
+[0;32mI (3260) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (3340) espnow_example: adc_raw2 = 1724[0m
+[0;32mI (3360) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (3440) espnow_example: adc_raw2 = 1720[0m
+[0;32mI (3460) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (3540) espnow_example: adc_raw2 = 1729[0m
+[0;32mI (3550) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (3640) espnow_example: adc_raw2 = 1712[0m
+[0;32mI (3660) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (3740) espnow_example: adc_raw2 = 1728[0m
+[0;32mI (3750) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (3840) espnow_example: adc_raw2 = 1732[0m
+[0;32mI (3860) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (3940) espnow_example: adc_raw2 = 1727[0m
+[0;32mI (3950) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (4040) espnow_example: adc_raw2 = 1719[0m
+[0;32mI (4060) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (4140) espnow_example: adc_raw2 = 1719[0m
+[0;32mI (4160) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (4240) espnow_example: adc_raw2 = 1711[0m
+[0;32mI (4250) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (4340) espnow_example: adc_raw2 = 1680[0m
+[0;32mI (4350) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (4440) espnow_example: adc_raw2 = 1724[0m
+[0;32mI (4460) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (4540) espnow_example: adc_raw2 = 1721[0m
+[0;32mI (4560) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (4640) espnow_example: adc_raw2 = 1712[0m
+[0;32mI (4660) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (4740) espnow_example: adc_raw2 = 1711[0m
+[0;32mI (4750) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (4840) espnow_example: adc_raw2 = 1740[0m
+[0;32mI (4850) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (4940) espnow_example: adc_raw2 = 1730[0m
+[0;32mI (4950) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (5040) espnow_example: adc_raw2 = 1712[0m
+[0;32mI (5060) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (5140) espnow_example: adc_raw2 = 1710[0m
+[0;32mI (5160) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (5240) espnow_example: adc_raw2 = 1734[0m
+[0;32mI (5260) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (5340) espnow_example: adc_raw2 = 1723[0m
+[0;32mI (5360) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (5440) espnow_example: adc_raw2 = 1735[0m
+[0;32mI (5460) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (5540) espnow_example: adc_raw2 = 1735[0m
+[0;32mI (5560) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (5640) espnow_example: adc_raw2 = 1722[0m
+[0;32mI (5670) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (5740) espnow_example: adc_raw2 = 1748[0m
+[0;32mI (5770) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (5840) espnow_example: adc_raw2 = 1750[0m
+[0;32mI (5860) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (5940) espnow_example: adc_raw2 = 1729[0m
+[0;32mI (5960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (6040) espnow_example: adc_raw2 = 1729[0m
+[0;32mI (6060) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (6140) espnow_example: adc_raw2 = 1697[0m
+[0;32mI (6160) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (6240) espnow_example: adc_raw2 = 1745[0m
+[0;32mI (6260) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (6340) espnow_example: adc_raw2 = 1735[0m
+[0;32mI (6370) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (6440) espnow_example: adc_raw2 = 1737[0m
+[0;32mI (6460) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (6540) espnow_example: adc_raw2 = 1739[0m
+[0;32mI (6560) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (6640) espnow_example: adc_raw2 = 1718[0m
+[0;32mI (6660) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (6740) espnow_example: adc_raw2 = 1741[0m
+[0;32mI (6770) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (6840) espnow_example: adc_raw2 = 1744[0m
+[0;32mI (6850) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (6940) espnow_example: adc_raw2 = 1738[0m
+[0;32mI (6960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (7040) espnow_example: adc_raw2 = 1739[0m
+[0;32mI (7060) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (7140) espnow_example: adc_raw2 = 1728[0m
+[0;32mI (7160) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (7240) espnow_example: adc_raw2 = 1759[0m
+[0;32mI (7250) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (7340) espnow_example: adc_raw2 = 1769[0m
+[0;32mI (7360) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (7440) espnow_example: adc_raw2 = 1718[0m
+[0;32mI (7450) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (7540) espnow_example: adc_raw2 = 1757[0m
+[0;32mI (7560) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (7640) espnow_example: adc_raw2 = 1759[0m
+[0;32mI (7650) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (7740) espnow_example: adc_raw2 = 1738[0m
+[0;32mI (7760) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (7840) espnow_example: adc_raw2 = 1728[0m
+[0;32mI (7860) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (7940) espnow_example: adc_raw2 = 1732[0m
+[0;32mI (7960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (8040) espnow_example: adc_raw2 = 1728[0m
+[0;32mI (8060) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (8140) espnow_example: adc_raw2 = 1744[0m
+[0;32mI (8150) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (8240) espnow_example: adc_raw2 = 1751[0m
+[0;32mI (8250) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (8340) espnow_example: adc_raw2 = 1747[0m
+[0;32mI (8350) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (8440) espnow_example: adc_raw2 = 1741[0m
+[0;32mI (8450) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (8540) espnow_example: adc_raw2 = 1738[0m
+[0;32mI (8550) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (8640) espnow_example: adc_raw2 = 1744[0m
+[0;32mI (8650) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (8740) espnow_example: adc_raw2 = 1745[0m
+[0;32mI (8750) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (8840) espnow_example: adc_raw2 = 1737[0m
+[0;32mI (8860) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (8940) espnow_example: adc_raw2 = 1744[0m
+[0;32mI (8960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (9040) espnow_example: adc_raw2 = 1735[0m
+[0;32mI (9060) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (9140) espnow_example: adc_raw2 = 1739[0m
+[0;32mI (9160) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (9240) espnow_example: adc_raw2 = 1734[0m
+[0;32mI (9260) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (9340) espnow_example: adc_raw2 = 1749[0m
+[0;32mI (9350) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (9440) espnow_example: adc_raw2 = 1728[0m
+[0;32mI (9460) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (9540) espnow_example: adc_raw2 = 1755[0m
+[0;32mI (9560) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (9640) espnow_example: adc_raw2 = 1737[0m
+[0;32mI (9660) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (9740) espnow_example: adc_raw2 = 1737[0m
+[0;32mI (9760) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (9840) espnow_example: adc_raw2 = 1738[0m
+[0;32mI (9850) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (9940) espnow_example: adc_raw2 = 1770[0m
+[0;32mI (9960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (10040) espnow_example: adc_raw2 = 1708[0m
+[0;32mI (10050) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (10140) espnow_example: adc_raw2 = 1742[0m
+[0;32mI (10160) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (10240) espnow_example: adc_raw2 = 1757[0m
+[0;32mI (10260) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (10340) espnow_example: adc_raw2 = 1755[0m
+[0;32mI (10360) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (10440) espnow_example: adc_raw2 = 1743[0m
+[0;32mI (10460) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (10540) espnow_example: adc_raw2 = 1752[0m
+[0;32mI (10560) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (10640) espnow_example: adc_raw2 = 1755[0m
+[0;32mI (10660) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (10740) espnow_example: adc_raw2 = 1744[0m
+[0;32mI (10760) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (10840) espnow_example: adc_raw2 = 1743[0m
+[0;32mI (10860) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (10940) espnow_example: adc_raw2 = 1745[0m
+[0;32mI (10960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (11040) espnow_example: adc_raw2 = 1784[0m
+[0;32mI (11050) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (11140) espnow_example: adc_raw2 = 1744[0m
+[0;32mI (11160) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (11240) espnow_example: adc_raw2 = 1744[0m
+[0;32mI (11250) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (11340) espnow_example: adc_raw2 = 1755[0m
+[0;32mI (11360) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (11440) espnow_example: adc_raw2 = 1761[0m
+[0;32mI (11450) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (11540) espnow_example: adc_raw2 = 1770[0m
+[0;32mI (11550) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (11640) espnow_example: adc_raw2 = 1755[0m
+[0;32mI (11650) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (11740) espnow_example: adc_raw2 = 1744[0m
+[0;32mI (11760) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (11840) espnow_example: adc_raw2 = 1753[0m
+[0;32mI (11850) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (11940) espnow_example: adc_raw2 = 1739[0m
+[0;32mI (11960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (12040) espnow_example: adc_raw2 = 1734[0m
+[0;32mI (12050) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (12140) espnow_example: adc_raw2 = 1744[0m
+[0;32mI (12150) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (12240) espnow_example: adc_raw2 = 1761[0m
+[0;32mI (12250) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (12340) espnow_example: adc_raw2 = 1758[0m
+[0;32mI (12350) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (12440) espnow_example: adc_raw2 = 1722[0m
+[0;32mI (12460) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (12540) espnow_example: adc_raw2 = 1744[0m
+[0;32mI (12560) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (12640) espnow_example: adc_raw2 = 1739[0m
+[0;32mI (12660) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (12740) espnow_example: adc_raw2 = 1755[0m
+[0;32mI (12760) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (12840) espnow_example: adc_raw2 = 1760[0m
+[0;32mI (12860) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (12940) espnow_example: adc_raw2 = 1745[0m
+[0;32mI (12960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (13040) espnow_example: adc_raw2 = 1739[0m
+[0;32mI (13050) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (13140) espnow_example: adc_raw2 = 1760[0m
+[0;32mI (13150) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (13240) espnow_example: adc_raw2 = 1746[0m
+[0;32mI (13280) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (13340) espnow_example: adc_raw2 = 1685[0m
+[0;32mI (13350) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (13440) espnow_example: adc_raw2 = 1690[0m
+[0;32mI (13460) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (13540) espnow_example: adc_raw2 = 1695[0m
+[0;32mI (13560) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (13640) espnow_example: adc_raw2 = 1677[0m
+[0;32mI (13660) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (13740) espnow_example: adc_raw2 = 1696[0m
+[0;32mI (13760) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (13840) espnow_example: adc_raw2 = 1677[0m
+[0;32mI (13860) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (13940) espnow_example: adc_raw2 = 1682[0m
+[0;32mI (13960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (14040) espnow_example: adc_raw2 = 1746[0m
+[0;32mI (14060) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (14140) espnow_example: adc_raw2 = 1683[0m
+[0;32mI (14160) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (14240) espnow_example: adc_raw2 = 1680[0m
+[0;32mI (14260) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (14340) espnow_example: adc_raw2 = 1670[0m
+[0;32mI (14350) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (14440) espnow_example: adc_raw2 = 1663[0m
+[0;32mI (14460) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (14540) espnow_example: adc_raw2 = 1676[0m
+[0;32mI (14560) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (14640) espnow_example: adc_raw2 = 1686[0m
+[0;32mI (14660) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (14740) espnow_example: adc_raw2 = 1670[0m
+[0;32mI (14760) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (14840) espnow_example: adc_raw2 = 1669[0m
+[0;32mI (14870) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (14940) espnow_example: adc_raw2 = 1680[0m
+[0;32mI (14960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (15040) espnow_example: adc_raw2 = 1686[0m
+[0;32mI (15060) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (15140) espnow_example: adc_raw2 = 1690[0m
+[0;32mI (15160) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (15240) espnow_example: adc_raw2 = 1683[0m
+[0;32mI (15260) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (15340) espnow_example: adc_raw2 = 1669[0m
+[0;32mI (15350) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (15440) espnow_example: adc_raw2 = 1667[0m
+[0;32mI (15450) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (15540) espnow_example: adc_raw2 = 1682[0m
+[0;32mI (15560) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (15640) espnow_example: adc_raw2 = 1697[0m
+[0;32mI (15650) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (15740) espnow_example: adc_raw2 = 1681[0m
+[0;32mI (15760) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (15840) espnow_example: adc_raw2 = 1701[0m
+[0;32mI (15860) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (15940) espnow_example: adc_raw2 = 1660[0m
+[0;32mI (15960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (16040) espnow_example: adc_raw2 = 1673[0m
+[0;32mI (16050) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (16140) espnow_example: adc_raw2 = 1664[0m
+[0;32mI (16150) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (16240) espnow_example: adc_raw2 = 1707[0m
+[0;32mI (16260) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (16340) espnow_example: adc_raw2 = 1682[0m
+[0;32mI (16350) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (16440) espnow_example: adc_raw2 = 1642[0m
+[0;32mI (16460) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (16540) espnow_example: adc_raw2 = 1676[0m
+[0;32mI (16550) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (16640) espnow_example: adc_raw2 = 1667[0m
+[0;32mI (16660) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (16740) espnow_example: adc_raw2 = 1686[0m
+[0;32mI (16750) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (16840) espnow_example: adc_raw2 = 1689[0m
+[0;32mI (16860) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (16940) espnow_example: adc_raw2 = 1681[0m
+[0;32mI (16960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (17040) espnow_example: adc_raw2 = 1680[0m
+[0;32mI (17060) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (17140) espnow_example: adc_raw2 = 1673[0m
+[0;32mI (17170) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (17240) espnow_example: adc_raw2 = 1667[0m
+[0;32mI (17280) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (17340) espnow_example: adc_raw2 = 1677[0m
+[0;32mI (17360) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (17440) espnow_example: adc_raw2 = 1685[0m
+[0;32mI (17460) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (17540) espnow_example: adc_raw2 = 1666[0m
+[0;32mI (17560) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (17640) espnow_example: adc_raw2 = 1680[0m
+[0;32mI (17660) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (17740) espnow_example: adc_raw2 = 1678[0m
+[0;32mI (17760) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (17840) espnow_example: adc_raw2 = 1681[0m
+[0;32mI (17860) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (17940) espnow_example: adc_raw2 = 1698[0m
+[0;32mI (17970) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (18040) espnow_example: adc_raw2 = 1682[0m
+[0;32mI (18070) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (18140) espnow_example: adc_raw2 = 1689[0m
+[0;32mI (18160) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (18240) espnow_example: adc_raw2 = 1678[0m
+[0;32mI (18250) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (18340) espnow_example: adc_raw2 = 1693[0m
+[0;32mI (18360) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (18440) espnow_example: adc_raw2 = 1693[0m
+[0;32mI (18460) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (18540) espnow_example: adc_raw2 = 1702[0m
+[0;32mI (18560) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (18640) espnow_example: adc_raw2 = 1683[0m
+[0;32mI (18660) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (18740) espnow_example: adc_raw2 = 1681[0m
+[0;32mI (18760) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (18840) espnow_example: adc_raw2 = 1701[0m
+[0;32mI (18870) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (18940) espnow_example: adc_raw2 = 1712[0m
+[0;32mI (18970) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (19040) espnow_example: adc_raw2 = 1692[0m
+[0;32mI (19060) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (19140) espnow_example: adc_raw2 = 1701[0m
+[0;32mI (19160) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (19240) espnow_example: adc_raw2 = 1682[0m
+[0;32mI (19260) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (19340) espnow_example: adc_raw2 = 1699[0m
+[0;32mI (19370) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (19440) espnow_example: adc_raw2 = 1712[0m
+[0;32mI (19460) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (19540) espnow_example: adc_raw2 = 1713[0m
+[0;32mI (19560) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (19640) espnow_example: adc_raw2 = 1643[0m
+[0;32mI (19670) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (19740) espnow_example: adc_raw2 = 1703[0m
+[0;32mI (19750) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (19840) espnow_example: adc_raw2 = 1707[0m
+[0;32mI (19850) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (19940) espnow_example: adc_raw2 = 1710[0m
+[0;32mI (19960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (20040) espnow_example: adc_raw2 = 1755[0m
+[0;32mI (20060) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (20140) espnow_example: adc_raw2 = 1719[0m
+[0;32mI (20150) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (20240) espnow_example: adc_raw2 = 1711[0m
+[0;32mI (20260) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (20340) espnow_example: adc_raw2 = 1718[0m
+[0;32mI (20360) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (20440) espnow_example: adc_raw2 = 1718[0m
+[0;32mI (20450) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (20540) espnow_example: adc_raw2 = 1686[0m
+[0;32mI (20560) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (20640) espnow_example: adc_raw2 = 1710[0m
+[0;32mI (20660) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (20740) espnow_example: adc_raw2 = 1697[0m
+[0;32mI (20760) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (20840) espnow_example: adc_raw2 = 1715[0m
+[0;32mI (20850) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (20940) espnow_example: adc_raw2 = 1694[0m
+[0;32mI (20960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (21040) espnow_example: adc_raw2 = 1706[0m
+[0;32mI (21060) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (21140) espnow_example: adc_raw2 = 1707[0m
+[0;32mI (21150) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (21240) espnow_example: adc_raw2 = 1713[0m
+[0;32mI (21260) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (21340) espnow_example: adc_raw2 = 1697[0m
+[0;32mI (21350) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (21440) espnow_example: adc_raw2 = 1697[0m
+[0;32mI (21450) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (21540) espnow_example: adc_raw2 = 1711[0m
+[0;32mI (21560) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (21640) espnow_example: adc_raw2 = 1696[0m
+[0;32mI (21660) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (21740) espnow_example: adc_raw2 = 1713[0m
+[0;32mI (21750) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (21840) espnow_example: adc_raw2 = 1713[0m
+[0;32mI (21850) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (21940) espnow_example: adc_raw2 = 1727[0m
+[0;32mI (21970) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (22040) espnow_example: adc_raw2 = 1713[0m
+[0;32mI (22070) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (22140) espnow_example: adc_raw2 = 1712[0m
+[0;32mI (22160) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (22240) espnow_example: adc_raw2 = 1720[0m
+[0;32mI (22260) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (22340) espnow_example: adc_raw2 = 1713[0m
+[0;32mI (22360) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (22440) espnow_example: adc_raw2 = 1723[0m
+[0;32mI (22460) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (22540) espnow_example: adc_raw2 = 1722[0m
+[0;32mI (22560) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (22640) espnow_example: adc_raw2 = 1695[0m
+[0;32mI (22660) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (22740) espnow_example: adc_raw2 = 1707[0m
+[0;32mI (22750) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (22840) espnow_example: adc_raw2 = 1712[0m
+[0;32mI (22850) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (22940) espnow_example: adc_raw2 = 1700[0m
+[0;32mI (22960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (23040) espnow_example: adc_raw2 = 1737[0m
+[0;32mI (23060) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (23140) espnow_example: adc_raw2 = 1703[0m
+[0;32mI (23160) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (23240) espnow_example: adc_raw2 = 1703[0m
+[0;32mI (23260) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (23340) espnow_example: adc_raw2 = 1709[0m
+[0;32mI (23360) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (23440) espnow_example: adc_raw2 = 1718[0m
+[0;32mI (23460) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (23540) espnow_example: adc_raw2 = 1728[0m
+[0;32mI (23560) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (23640) espnow_example: adc_raw2 = 1723[0m
+[0;32mI (23660) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (23740) espnow_example: adc_raw2 = 1728[0m
+[0;32mI (23760) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (23840) espnow_example: adc_raw2 = 1707[0m
+[0;32mI (23860) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (23940) espnow_example: adc_raw2 = 1706[0m
+[0;32mI (23960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (24040) espnow_example: adc_raw2 = 1686[0m
+[0;32mI (24080) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (24140) espnow_example: adc_raw2 = 1713[0m
+[0;32mI (24160) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (24240) espnow_example: adc_raw2 = 1717[0m
+[0;32mI (24260) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (24340) espnow_example: adc_raw2 = 1739[0m
+[0;32mI (24360) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (24440) espnow_example: adc_raw2 = 1708[0m
+[0;32mI (24480) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (24540) espnow_example: adc_raw2 = 1702[0m
+[0;32mI (24560) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (24640) espnow_example: adc_raw2 = 1726[0m
+[0;32mI (24670) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (24740) espnow_example: adc_raw2 = 1710[0m
+[0;32mI (24760) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (24840) espnow_example: adc_raw2 = 1712[0m
+[0;32mI (24850) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (24940) espnow_example: adc_raw2 = 1729[0m
+[0;32mI (24950) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (25040) espnow_example: adc_raw2 = 1711[0m
+[0;32mI (25050) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (25140) espnow_example: adc_raw2 = 1706[0m
+[0;32mI (25150) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (25240) espnow_example: adc_raw2 = 1711[0m
+[0;32mI (25260) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (25340) espnow_example: adc_raw2 = 1692[0m
+[0;32mI (25350) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (25440) espnow_example: adc_raw2 = 1703[0m
+[0;32mI (25460) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (25540) espnow_example: adc_raw2 = 1697[0m
+[0;32mI (25560) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (25640) espnow_example: adc_raw2 = 1722[0m
+[0;32mI (25660) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (25740) espnow_example: adc_raw2 = 1652[0m
+[0;32mI (25760) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (25840) espnow_example: adc_raw2 = 1703[0m
+[0;32mI (25860) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (25940) espnow_example: adc_raw2 = 1721[0m
+[0;32mI (25950) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (26040) espnow_example: adc_raw2 = 1725[0m
+[0;32mI (26050) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (26140) espnow_example: adc_raw2 = 1713[0m
+[0;32mI (26160) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (26240) espnow_example: adc_raw2 = 1699[0m
+[0;32mI (26250) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (26340) espnow_example: adc_raw2 = 1731[0m
+[0;32mI (26360) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (26440) espnow_example: adc_raw2 = 1723[0m
+[0;32mI (26460) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (26540) espnow_example: adc_raw2 = 1707[0m
+[0;32mI (26560) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (26640) espnow_example: adc_raw2 = 1711[0m
+[0;32mI (26650) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (26740) espnow_example: adc_raw2 = 1731[0m
+[0;32mI (26760) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (26840) espnow_example: adc_raw2 = 1699[0m
+[0;32mI (26850) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (26940) espnow_example: adc_raw2 = 1707[0m
+[0;32mI (26960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (27040) espnow_example: adc_raw2 = 1712[0m
+[0;32mI (27050) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (27140) espnow_example: adc_raw2 = 1717[0m
+[0;32mI (27160) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (27240) espnow_example: adc_raw2 = 1710[0m
+[0;32mI (27260) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (27340) espnow_example: adc_raw2 = 1717[0m
+[0;32mI (27360) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (27440) espnow_example: adc_raw2 = 1713[0m
+[0;32mI (27460) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (27540) espnow_example: adc_raw2 = 1718[0m
+[0;32mI (27570) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (27640) espnow_example: adc_raw2 = 1733[0m
+[0;32mI (27660) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (27740) espnow_example: adc_raw2 = 1712[0m
+[0;32mI (27760) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (27840) espnow_example: adc_raw2 = 1712[0m
+[0;32mI (27860) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (27940) espnow_example: adc_raw2 = 1722[0m
+[0;32mI (27960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (28040) espnow_example: adc_raw2 = 1703[0m
+[0;32mI (28070) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (28140) espnow_example: adc_raw2 = 1691[0m
+[0;32mI (28160) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (28240) espnow_example: adc_raw2 = 1744[0m
+[0;32mI (28250) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (28340) espnow_example: adc_raw2 = 1697[0m
+[0;32mI (28350) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (28440) espnow_example: adc_raw2 = 1712[0m
+[0;32mI (28460) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (28540) espnow_example: adc_raw2 = 1723[0m
+[0;32mI (28560) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (28640) espnow_example: adc_raw2 = 1729[0m
+[0;32mI (28650) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (28740) espnow_example: adc_raw2 = 1725[0m
+[0;32mI (28760) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (28840) espnow_example: adc_raw2 = 1730[0m
+[0;32mI (28860) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (28940) espnow_example: adc_raw2 = 1712[0m
+[0;32mI (28960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (29040) espnow_example: adc_raw2 = 1717[0m
+[0;32mI (29060) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (29140) espnow_example: adc_raw2 = 1712[0m
+[0;32mI (29160) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (29240) espnow_example: adc_raw2 = 1717[0m
+[0;32mI (29250) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (29340) espnow_example: adc_raw2 = 1731[0m
+[0;32mI (29350) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (29440) espnow_example: adc_raw2 = 1731[0m
+[0;32mI (29460) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (29540) espnow_example: adc_raw2 = 1728[0m
+[0;32mI (29560) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (29640) espnow_example: adc_raw2 = 1719[0m
+[0;32mI (29660) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (29740) espnow_example: adc_raw2 = 1726[0m
+[0;32mI (29750) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (29840) espnow_example: adc_raw2 = 1726[0m
+[0;32mI (29850) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (29940) espnow_example: adc_raw2 = 1709[0m
+[0;32mI (29950) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (30040) espnow_example: adc_raw2 = 145[0m
+[0;32mI (30050) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (30140) espnow_example: adc_raw2 = 0[0m
+[0;32mI (30150) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (30240) espnow_example: adc_raw2 = 0[0m
+[0;32mI (30250) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (30340) espnow_example: adc_raw2 = 0[0m
+[0;32mI (30360) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (30440) espnow_example: adc_raw2 = 0[0m
+[0;32mI (30460) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (30540) espnow_example: adc_raw2 = 0[0m
+[0;32mI (30550) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (30640) espnow_example: adc_raw2 = 0[0m
+[0;32mI (30660) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (30740) espnow_example: adc_raw2 = 31[0m
+[0;32mI (30760) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (30840) espnow_example: adc_raw2 = 1742[0m
+[0;32mI (30850) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (30940) espnow_example: adc_raw2 = 1729[0m
+[0;32mI (30960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (31040) espnow_example: adc_raw2 = 4095[0m
+[0;32mI (31060) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (31140) espnow_example: adc_raw2 = 4095[0m
+[0;32mI (31150) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (31240) espnow_example: adc_raw2 = 4095[0m
+[0;32mI (31250) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (31340) espnow_example: adc_raw2 = 4095[0m
+[0;32mI (31360) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (31440) espnow_example: adc_raw2 = 4095[0m
+[0;32mI (31460) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (31540) espnow_example: adc_raw2 = 4095[0m
+[0;32mI (31560) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (31640) espnow_example: adc_raw2 = 4095[0m
+[0;32mI (31660) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (31740) espnow_example: adc_raw2 = 4095[0m
+[0;32mI (31760) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (31840) espnow_example: adc_raw2 = 1717[0m
+[0;32mI (31870) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (31940) espnow_example: adc_raw2 = 1723[0m
+[0;32mI (31960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (32040) espnow_example: adc_raw2 = 1710[0m
+[0;32mI (32060) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (32140) espnow_example: adc_raw2 = 1724[0m
+[0;32mI (32160) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (32240) espnow_example: adc_raw2 = 1712[0m
+[0;32mI (32260) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (32340) espnow_example: adc_raw2 = 1728[0m
+[0;32mI (32360) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (32440) espnow_example: adc_raw2 = 1735[0m
+[0;32mI (32470) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (32540) espnow_example: adc_raw2 = 1719[0m
+[0;32mI (32550) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (32640) espnow_example: adc_raw2 = 1724[0m
+[0;32mI (32680) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (32740) espnow_example: adc_raw2 = 1719[0m
+[0;32mI (32780) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (32840) espnow_example: adc_raw2 = 1729[0m
+[0;32mI (32860) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (32940) espnow_example: adc_raw2 = 1744[0m
+[0;32mI (32960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (33040) espnow_example: adc_raw2 = 1737[0m
+[0;32mI (33060) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (33140) espnow_example: adc_raw2 = 1726[0m
+[0;32mI (33160) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (33240) espnow_example: adc_raw2 = 1693[0m
+[0;32mI (33260) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (33340) espnow_example: adc_raw2 = 1709[0m
+[0;32mI (33370) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (33440) espnow_example: adc_raw2 = 1712[0m
+[0;32mI (33460) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (33540) espnow_example: adc_raw2 = 1721[0m
+[0;32mI (33560) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (33640) espnow_example: adc_raw2 = 1714[0m
+[0;32mI (33660) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (33740) espnow_example: adc_raw2 = 1715[0m
+[0;32mI (33750) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (33840) espnow_example: adc_raw2 = 1703[0m
+[0;32mI (33850) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (33940) espnow_example: adc_raw2 = 1739[0m
+[0;32mI (33960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (34040) espnow_example: adc_raw2 = 1708[0m
+[0;32mI (34060) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (34140) espnow_example: adc_raw2 = 1726[0m
+[0;32mI (34150) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (34240) espnow_example: adc_raw2 = 1726[0m
+[0;32mI (34260) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (34340) espnow_example: adc_raw2 = 1729[0m
+[0;32mI (34360) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (34440) espnow_example: adc_raw2 = 1717[0m
+[0;32mI (34450) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (34540) espnow_example: adc_raw2 = 1727[0m
+[0;32mI (34550) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (34640) espnow_example: adc_raw2 = 1718[0m
+[0;32mI (34650) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (34740) espnow_example: adc_raw2 = 1721[0m
+[0;32mI (34770) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (34840) espnow_example: adc_raw2 = 1719[0m
+[0;32mI (34870) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (34940) espnow_example: adc_raw2 = 1726[0m
+[0;32mI (34960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (35040) espnow_example: adc_raw2 = 1699[0m
+[0;32mI (35060) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (35140) espnow_example: adc_raw2 = 1705[0m
+[0;32mI (35160) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (35240) espnow_example: adc_raw2 = 1722[0m
+[0;32mI (35260) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (35340) espnow_example: adc_raw2 = 1700[0m
+[0;32mI (35360) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (35440) espnow_example: adc_raw2 = 1716[0m
+[0;32mI (35450) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (35540) espnow_example: adc_raw2 = 1727[0m
+[0;32mI (35550) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (35640) espnow_example: adc_raw2 = 1728[0m
+[0;32mI (35650) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (35740) espnow_example: adc_raw2 = 1712[0m
+[0;32mI (35760) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (35840) espnow_example: adc_raw2 = 1719[0m
+[0;32mI (35860) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (35940) espnow_example: adc_raw2 = 1718[0m
+[0;32mI (35960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (36040) espnow_example: adc_raw2 = 1712[0m
+[0;32mI (36060) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (36140) espnow_example: adc_raw2 = 1720[0m
+[0;32mI (36170) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (36240) espnow_example: adc_raw2 = 1724[0m
+[0;32mI (36260) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (36340) espnow_example: adc_raw2 = 1719[0m
+[0;32mI (36360) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (36440) espnow_example: adc_raw2 = 1735[0m
+[0;32mI (36460) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (36540) espnow_example: adc_raw2 = 1738[0m
+[0;32mI (36550) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (36640) espnow_example: adc_raw2 = 1727[0m
+[0;32mI (36670) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (36740) espnow_example: adc_raw2 = 1732[0m
+[0;32mI (36760) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (36840) espnow_example: adc_raw2 = 1732[0m
+[0;32mI (36860) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (36940) espnow_example: adc_raw2 = 1714[0m
+[0;32mI (36960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (37040) espnow_example: adc_raw2 = 1725[0m
+[0;32mI (37060) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (37140) espnow_example: adc_raw2 = 1738[0m
+[0;32mI (37160) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (37240) espnow_example: adc_raw2 = 1705[0m
+[0;32mI (37260) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (37340) espnow_example: adc_raw2 = 1721[0m
+[0;32mI (37360) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (37440) espnow_example: adc_raw2 = 1728[0m
+[0;32mI (37460) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (37540) espnow_example: adc_raw2 = 1715[0m
+[0;32mI (37560) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (37640) espnow_example: adc_raw2 = 1733[0m
+[0;32mI (37660) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (37740) espnow_example: adc_raw2 = 1723[0m
+[0;32mI (37760) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (37840) espnow_example: adc_raw2 = 1728[0m
+[0;32mI (37860) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (37940) espnow_example: adc_raw2 = 1705[0m
+[0;32mI (37960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (38040) espnow_example: adc_raw2 = 1722[0m
+[0;32mI (38050) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (38140) espnow_example: adc_raw2 = 1715[0m
+[0;32mI (38150) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (38240) espnow_example: adc_raw2 = 1698[0m
+[0;32mI (38260) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (38340) espnow_example: adc_raw2 = 1719[0m
+[0;32mI (38360) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (38440) espnow_example: adc_raw2 = 1718[0m
+[0;32mI (38450) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (38540) espnow_example: adc_raw2 = 1711[0m
+[0;32mI (38560) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (38640) espnow_example: adc_raw2 = 1718[0m
+[0;32mI (38650) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (38740) espnow_example: adc_raw2 = 1723[0m
+[0;32mI (38750) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (38840) espnow_example: adc_raw2 = 1714[0m
+[0;32mI (38850) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (38940) espnow_example: adc_raw2 = 1719[0m
+[0;32mI (38950) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (39040) espnow_example: adc_raw2 = 1722[0m
+[0;32mI (39050) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (39140) espnow_example: adc_raw2 = 1712[0m
+[0;32mI (39160) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (39240) espnow_example: adc_raw2 = 1713[0m
+[0;32mI (39260) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (39340) espnow_example: adc_raw2 = 1718[0m
+[0;32mI (39360) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (39440) espnow_example: adc_raw2 = 1686[0m
+[0;32mI (39460) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (39540) espnow_example: adc_raw2 = 1728[0m
+[0;32mI (39560) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (39640) espnow_example: adc_raw2 = 1712[0m
+[0;32mI (39660) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (39740) espnow_example: adc_raw2 = 1719[0m
+[0;32mI (39750) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (39840) espnow_example: adc_raw2 = 1729[0m
+[0;32mI (39850) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (39940) espnow_example: adc_raw2 = 1724[0m
+[0;32mI (39950) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (40040) espnow_example: adc_raw2 = 1722[0m
+[0;32mI (40060) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (40140) espnow_example: adc_raw2 = 1728[0m
+[0;32mI (40160) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (40240) espnow_example: adc_raw2 = 1733[0m
+[0;32mI (40260) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (40340) espnow_example: adc_raw2 = 1719[0m
+[0;32mI (40360) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (40440) espnow_example: adc_raw2 = 1733[0m
+[0;32mI (40460) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (40540) espnow_example: adc_raw2 = 1723[0m
+[0;32mI (40560) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (40640) espnow_example: adc_raw2 = 1725[0m
+[0;32mI (40660) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (40740) espnow_example: adc_raw2 = 1738[0m
+[0;32mI (40760) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (40840) espnow_example: adc_raw2 = 1733[0m
+[0;32mI (40860) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (40940) espnow_example: adc_raw2 = 1723[0m
+[0;32mI (40950) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (41040) espnow_example: adc_raw2 = 1726[0m
+[0;32mI (41050) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (41140) espnow_example: adc_raw2 = 1713[0m
+[0;32mI (41150) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (41240) espnow_example: adc_raw2 = 1725[0m
+[0;32mI (41250) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (41340) espnow_example: adc_raw2 = 1721[0m
+[0;32mI (41350) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (41440) espnow_example: adc_raw2 = 1731[0m
+[0;32mI (41450) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (41540) espnow_example: adc_raw2 = 1715[0m
+[0;32mI (41550) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (41640) espnow_example: adc_raw2 = 1729[0m
+[0;32mI (41650) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (41740) espnow_example: adc_raw2 = 1743[0m
+[0;32mI (41750) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (41840) espnow_example: adc_raw2 = 1718[0m
+[0;32mI (41860) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (41940) espnow_example: adc_raw2 = 1727[0m
+[0;32mI (41960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (42040) espnow_example: adc_raw2 = 1732[0m
+[0;32mI (42070) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (42140) espnow_example: adc_raw2 = 1738[0m
+[0;32mI (42150) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (42240) espnow_example: adc_raw2 = 1717[0m
+[0;32mI (42250) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (42340) espnow_example: adc_raw2 = 1725[0m
+[0;32mI (42350) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (42440) espnow_example: adc_raw2 = 1706[0m
+[0;32mI (42460) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (42540) espnow_example: adc_raw2 = 1732[0m
+[0;32mI (42550) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (42640) espnow_example: adc_raw2 = 1712[0m
+[0;32mI (42650) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (42740) espnow_example: adc_raw2 = 1723[0m
+[0;32mI (42760) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (42840) espnow_example: adc_raw2 = 1730[0m
+[0;32mI (42850) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (42940) espnow_example: adc_raw2 = 1725[0m
+[0;32mI (42950) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (43040) espnow_example: adc_raw2 = 1735[0m
+[0;32mI (43060) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (43140) espnow_example: adc_raw2 = 1725[0m
+[0;32mI (43150) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (43240) espnow_example: adc_raw2 = 1725[0m
+[0;32mI (43250) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (43340) espnow_example: adc_raw2 = 1723[0m
+[0;32mI (43350) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (43440) espnow_example: adc_raw2 = 1729[0m
+[0;32mI (43460) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (43540) espnow_example: adc_raw2 = 1715[0m
+[0;32mI (43550) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (43640) espnow_example: adc_raw2 = 1738[0m
+[0;32mI (43660) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (43740) espnow_example: adc_raw2 = 1723[0m
+[0;32mI (43760) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (43840) espnow_example: adc_raw2 = 1717[0m
+[0;32mI (43860) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (43940) espnow_example: adc_raw2 = 1727[0m
+[0;32mI (43950) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (44040) espnow_example: adc_raw2 = 1731[0m
+[0;32mI (44050) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (44140) espnow_example: adc_raw2 = 1729[0m
+[0;32mI (44150) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (44240) espnow_example: adc_raw2 = 1735[0m
+[0;32mI (44260) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (44340) espnow_example: adc_raw2 = 1735[0m
+[0;32mI (44360) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (44440) espnow_example: adc_raw2 = 1727[0m
+[0;32mI (44460) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (44540) espnow_example: adc_raw2 = 1729[0m
+[0;32mI (44560) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (44640) espnow_example: adc_raw2 = 1742[0m
+[0;32mI (44660) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (44740) espnow_example: adc_raw2 = 1725[0m
+[0;32mI (44760) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (44840) espnow_example: adc_raw2 = 1729[0m
+[0;32mI (44860) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (44940) espnow_example: adc_raw2 = 1701[0m
+[0;32mI (44960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (45040) espnow_example: adc_raw2 = 1730[0m
+[0;32mI (45060) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (45140) espnow_example: adc_raw2 = 1725[0m
+[0;32mI (45160) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (45240) espnow_example: adc_raw2 = 1728[0m
+[0;32mI (45250) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (45340) espnow_example: adc_raw2 = 1737[0m
+[0;32mI (45350) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (45440) espnow_example: adc_raw2 = 1730[0m
+[0;32mI (45450) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (45540) espnow_example: adc_raw2 = 1744[0m
+[0;32mI (45550) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (45640) espnow_example: adc_raw2 = 1723[0m
+[0;32mI (45650) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (45740) espnow_example: adc_raw2 = 1713[0m
+[0;32mI (45750) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (45840) espnow_example: adc_raw2 = 1728[0m
+[0;32mI (45850) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (45940) espnow_example: adc_raw2 = 1731[0m
+[0;32mI (45950) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (46040) espnow_example: adc_raw2 = 1731[0m
+[0;32mI (46050) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (46140) espnow_example: adc_raw2 = 1723[0m
+[0;32mI (46150) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (46240) espnow_example: adc_raw2 = 1727[0m
+[0;32mI (46260) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (46340) espnow_example: adc_raw2 = 1726[0m
+[0;32mI (46350) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (46440) espnow_example: adc_raw2 = 1712[0m
+[0;32mI (46470) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (46540) espnow_example: adc_raw2 = 1728[0m
+[0;32mI (46560) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (46640) espnow_example: adc_raw2 = 1728[0m
+[0;32mI (46660) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (46740) espnow_example: adc_raw2 = 1733[0m
+[0;32mI (46760) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (46840) espnow_example: adc_raw2 = 1729[0m
+[0;32mI (46860) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (46940) espnow_example: adc_raw2 = 1735[0m
+[0;32mI (46960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (47040) espnow_example: adc_raw2 = 1733[0m
+[0;32mI (47050) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (47140) espnow_example: adc_raw2 = 1735[0m
+[0;32mI (47160) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (47240) espnow_example: adc_raw2 = 1714[0m
+[0;32mI (47250) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (47340) espnow_example: adc_raw2 = 1730[0m
+[0;32mI (47350) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (47440) espnow_example: adc_raw2 = 1716[0m
+[0;32mI (47450) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (47540) espnow_example: adc_raw2 = 1725[0m
+[0;32mI (47560) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (47640) espnow_example: adc_raw2 = 1727[0m
+[0;32mI (47660) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (47740) espnow_example: adc_raw2 = 1724[0m
+[0;32mI (47760) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (47840) espnow_example: adc_raw2 = 1719[0m
+[0;32mI (47870) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (47940) espnow_example: adc_raw2 = 1712[0m
+[0;32mI (47970) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (48040) espnow_example: adc_raw2 = 1729[0m
+[0;32mI (48060) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (48140) espnow_example: adc_raw2 = 1718[0m
+[0;32mI (48160) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (48240) espnow_example: adc_raw2 = 1739[0m
+[0;32mI (48260) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (48340) espnow_example: adc_raw2 = 1728[0m
+[0;32mI (48360) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (48440) espnow_example: adc_raw2 = 1728[0m
+[0;32mI (48450) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (48540) espnow_example: adc_raw2 = 1748[0m
+[0;32mI (48560) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (48640) espnow_example: adc_raw2 = 1728[0m
+[0;32mI (48660) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (48740) espnow_example: adc_raw2 = 1723[0m
+[0;32mI (48760) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (48840) espnow_example: adc_raw2 = 1721[0m
+[0;32mI (48860) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (48940) espnow_example: adc_raw2 = 1733[0m
+[0;32mI (48960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (49040) espnow_example: adc_raw2 = 1745[0m
+[0;32mI (49060) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (49140) espnow_example: adc_raw2 = 1727[0m
+[0;32mI (49170) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (49240) espnow_example: adc_raw2 = 1715[0m
+[0;32mI (49260) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (49340) espnow_example: adc_raw2 = 1726[0m
+[0;32mI (49360) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (49440) espnow_example: adc_raw2 = 1728[0m
+[0;32mI (49450) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (49540) espnow_example: adc_raw2 = 1728[0m
+[0;32mI (49550) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (49640) espnow_example: adc_raw2 = 1737[0m
+[0;32mI (49660) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (49740) espnow_example: adc_raw2 = 1739[0m
+[0;32mI (49760) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (49840) espnow_example: adc_raw2 = 1732[0m
+[0;32mI (49850) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (49940) espnow_example: adc_raw2 = 1742[0m
+[0;32mI (49960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (50040) espnow_example: adc_raw2 = 1725[0m
+[0;32mI (50050) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (50140) espnow_example: adc_raw2 = 1716[0m
+[0;32mI (50150) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (50240) espnow_example: adc_raw2 = 1733[0m
+[0;32mI (50260) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (50340) espnow_example: adc_raw2 = 1723[0m
+[0;32mI (50360) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (50440) espnow_example: adc_raw2 = 1721[0m
+[0;32mI (50460) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (50540) espnow_example: adc_raw2 = 1713[0m
+[0;32mI (50560) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (50640) espnow_example: adc_raw2 = 1693[0m
+[0;32mI (50650) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (50740) espnow_example: adc_raw2 = 1719[0m
+[0;32mI (50750) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (50840) espnow_example: adc_raw2 = 1720[0m
+[0;32mI (50870) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (50940) espnow_example: adc_raw2 = 1717[0m
+[0;32mI (50950) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (51040) espnow_example: adc_raw2 = 1744[0m
+[0;32mI (51050) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (51140) espnow_example: adc_raw2 = 1739[0m
+[0;32mI (51150) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (51240) espnow_example: adc_raw2 = 1738[0m
+[0;32mI (51250) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (51340) espnow_example: adc_raw2 = 1719[0m
+[0;32mI (51350) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (51440) espnow_example: adc_raw2 = 1716[0m
+[0;32mI (51450) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (51540) espnow_example: adc_raw2 = 1723[0m
+[0;32mI (51550) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (51640) espnow_example: adc_raw2 = 1724[0m
+[0;32mI (51650) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (51740) espnow_example: adc_raw2 = 1730[0m
+[0;32mI (51750) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (51840) espnow_example: adc_raw2 = 1727[0m
+[0;32mI (51870) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (51940) espnow_example: adc_raw2 = 1730[0m
+[0;32mI (51960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (52040) espnow_example: adc_raw2 = 1729[0m
+[0;32mI (52060) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (52140) espnow_example: adc_raw2 = 1725[0m
+[0;32mI (52160) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (52240) espnow_example: adc_raw2 = 1721[0m
+[0;32mI (52250) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (52340) espnow_example: adc_raw2 = 1719[0m
+[0;32mI (52360) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (52440) espnow_example: adc_raw2 = 1727[0m
+[0;32mI (52450) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (52540) espnow_example: adc_raw2 = 1733[0m
+[0;32mI (52560) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (52640) espnow_example: adc_raw2 = 1734[0m
+[0;32mI (52660) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (52740) espnow_example: adc_raw2 = 1731[0m
+[0;32mI (52760) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (52840) espnow_example: adc_raw2 = 1773[0m
+[0;32mI (52860) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (52940) espnow_example: adc_raw2 = 1728[0m
+[0;32mI (52970) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (53040) espnow_example: adc_raw2 = 1724[0m
+[0;32mI (53060) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (53140) espnow_example: adc_raw2 = 1728[0m
+[0;32mI (53180) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (53240) espnow_example: adc_raw2 = 1695[0m
+[0;32mI (53260) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (53340) espnow_example: adc_raw2 = 1728[0m
+[0;32mI (53370) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (53440) espnow_example: adc_raw2 = 1749[0m
+[0;32mI (53460) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (53540) espnow_example: adc_raw2 = 1731[0m
+[0;32mI (53570) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (53640) espnow_example: adc_raw2 = 1727[0m
+[0;32mI (53670) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (53740) espnow_example: adc_raw2 = 1738[0m
+[0;32mI (53760) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (53840) espnow_example: adc_raw2 = 1714[0m
+[0;32mI (53850) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (53940) espnow_example: adc_raw2 = 1733[0m
+[0;32mI (53950) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (54040) espnow_example: adc_raw2 = 1728[0m
+[0;32mI (54050) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (54140) espnow_example: adc_raw2 = 1739[0m
+[0;32mI (54180) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (54240) espnow_example: adc_raw2 = 1722[0m
+[0;32mI (54260) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (54340) espnow_example: adc_raw2 = 1740[0m
+[0;32mI (54360) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (54440) espnow_example: adc_raw2 = 1750[0m
+[0;32mI (54460) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (54540) espnow_example: adc_raw2 = 1736[0m
+[0;32mI (54560) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (54640) espnow_example: adc_raw2 = 1750[0m
+[0;32mI (54660) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (54740) espnow_example: adc_raw2 = 1746[0m
+[0;32mI (54760) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (54840) espnow_example: adc_raw2 = 1729[0m
+[0;32mI (54860) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (54940) espnow_example: adc_raw2 = 1741[0m
+[0;32mI (54960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (55040) espnow_example: adc_raw2 = 1734[0m
+[0;32mI (55060) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (55140) espnow_example: adc_raw2 = 1731[0m
+[0;32mI (55150) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (55240) espnow_example: adc_raw2 = 1744[0m
+[0;32mI (55260) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (55340) espnow_example: adc_raw2 = 1723[0m
+[0;32mI (55350) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (55440) espnow_example: adc_raw2 = 1746[0m
+[0;32mI (55460) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (55540) espnow_example: adc_raw2 = 1731[0m
+[0;32mI (55550) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (55640) espnow_example: adc_raw2 = 1744[0m
+[0;32mI (55660) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (55740) espnow_example: adc_raw2 = 1737[0m
+[0;32mI (55750) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (55840) espnow_example: adc_raw2 = 1743[0m
+[0;32mI (55850) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (55940) espnow_example: adc_raw2 = 1739[0m
+[0;32mI (55960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (56040) espnow_example: adc_raw2 = 1732[0m
+[0;32mI (56050) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (56140) espnow_example: adc_raw2 = 1706[0m
+[0;32mI (56150) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (56240) espnow_example: adc_raw2 = 1730[0m
+[0;32mI (56260) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (56340) espnow_example: adc_raw2 = 1725[0m
+[0;32mI (56360) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (56440) espnow_example: adc_raw2 = 1741[0m
+[0;32mI (56450) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (56540) espnow_example: adc_raw2 = 1732[0m
+[0;32mI (56550) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (56640) espnow_example: adc_raw2 = 1731[0m
+[0;32mI (56660) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (56740) espnow_example: adc_raw2 = 1739[0m
+[0;32mI (56750) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (56840) espnow_example: adc_raw2 = 1742[0m
+[0;32mI (56850) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (56940) espnow_example: adc_raw2 = 1739[0m
+[0;32mI (56950) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (57040) espnow_example: adc_raw2 = 1734[0m
+[0;32mI (57060) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (57140) espnow_example: adc_raw2 = 1733[0m
+[0;32mI (57160) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (57240) espnow_example: adc_raw2 = 1738[0m
+[0;32mI (57260) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (57340) espnow_example: adc_raw2 = 1732[0m
+[0;32mI (57360) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (57440) espnow_example: adc_raw2 = 1730[0m
+[0;32mI (57460) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (57540) espnow_example: adc_raw2 = 1731[0m
+[0;32mI (57560) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (57640) espnow_example: adc_raw2 = 1754[0m
+[0;32mI (57680) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (57740) espnow_example: adc_raw2 = 1744[0m
+[0;32mI (57760) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (57840) espnow_example: adc_raw2 = 1737[0m
+[0;32mI (57860) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (57940) espnow_example: adc_raw2 = 1733[0m
+[0;32mI (57960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (58040) espnow_example: adc_raw2 = 1728[0m
+[0;32mI (58050) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (58140) espnow_example: adc_raw2 = 1740[0m
+[0;32mI (58150) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (58240) espnow_example: adc_raw2 = 1749[0m
+[0;32mI (58250) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (58340) espnow_example: adc_raw2 = 1730[0m
+[0;32mI (58360) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (58440) espnow_example: adc_raw2 = 1733[0m
+[0;32mI (58460) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (58540) espnow_example: adc_raw2 = 1738[0m
+[0;32mI (58560) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (58640) espnow_example: adc_raw2 = 1723[0m
+[0;32mI (58660) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (58740) espnow_example: adc_raw2 = 1738[0m
+[0;32mI (58760) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (58840) espnow_example: adc_raw2 = 1730[0m
+[0;32mI (58860) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (58940) espnow_example: adc_raw2 = 1737[0m
+[0;32mI (58960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (59040) espnow_example: adc_raw2 = 1738[0m
+[0;32mI (59050) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (59140) espnow_example: adc_raw2 = 1731[0m
+[0;32mI (59150) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (59240) espnow_example: adc_raw2 = 1731[0m
+[0;32mI (59250) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (59340) espnow_example: adc_raw2 = 1734[0m
+[0;32mI (59350) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (59440) espnow_example: adc_raw2 = 1731[0m
+[0;32mI (59460) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (59540) espnow_example: adc_raw2 = 1741[0m
+[0;32mI (59550) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (59640) espnow_example: adc_raw2 = 1731[0m
+[0;32mI (59660) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (59740) espnow_example: adc_raw2 = 1730[0m
+[0;32mI (59750) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (59840) espnow_example: adc_raw2 = 1734[0m
+[0;32mI (59860) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (59940) espnow_example: adc_raw2 = 1730[0m
+[0;32mI (59960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (60040) espnow_example: adc_raw2 = 1739[0m
+[0;32mI (60050) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (60140) espnow_example: adc_raw2 = 1739[0m
+[0;32mI (60150) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (60240) espnow_example: adc_raw2 = 1728[0m
+[0;32mI (60250) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (60340) espnow_example: adc_raw2 = 1744[0m
+[0;32mI (60350) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (60440) espnow_example: adc_raw2 = 1741[0m
+[0;32mI (60450) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (60540) espnow_example: adc_raw2 = 1740[0m
+[0;32mI (60550) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (60640) espnow_example: adc_raw2 = 1741[0m
+[0;32mI (60660) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (60740) espnow_example: adc_raw2 = 1738[0m
+[0;32mI (60760) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (60840) espnow_example: adc_raw2 = 1743[0m
+[0;32mI (60860) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (60940) espnow_example: adc_raw2 = 1724[0m
+[0;32mI (60960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (61040) espnow_example: adc_raw2 = 1726[0m
+[0;32mI (61050) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (61140) espnow_example: adc_raw2 = 1734[0m
+[0;32mI (61150) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (61240) espnow_example: adc_raw2 = 1744[0m
+[0;32mI (61260) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (61340) espnow_example: adc_raw2 = 1729[0m
+[0;32mI (61360) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (61440) espnow_example: adc_raw2 = 1749[0m
+[0;32mI (61460) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (61540) espnow_example: adc_raw2 = 1728[0m
+[0;32mI (61560) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (61640) espnow_example: adc_raw2 = 1743[0m
+[0;32mI (61660) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (61740) espnow_example: adc_raw2 = 1733[0m
+[0;32mI (61760) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (61840) espnow_example: adc_raw2 = 1744[0m
+[0;32mI (61860) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (61940) espnow_example: adc_raw2 = 1728[0m
+[0;32mI (61960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (62040) espnow_example: adc_raw2 = 1729[0m
+[0;32mI (62070) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (62140) espnow_example: adc_raw2 = 1742[0m
+[0;32mI (62160) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (62240) espnow_example: adc_raw2 = 1734[0m
+[0;32mI (62250) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (62340) espnow_example: adc_raw2 = 1735[0m
+[0;32mI (62350) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (62440) espnow_example: adc_raw2 = 1738[0m
+[0;32mI (62450) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (62540) espnow_example: adc_raw2 = 1744[0m
+[0;32mI (62550) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (62640) espnow_example: adc_raw2 = 1747[0m
+[0;32mI (62660) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (62740) espnow_example: adc_raw2 = 1731[0m
+[0;32mI (62750) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (62840) espnow_example: adc_raw2 = 1741[0m
+[0;32mI (62860) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (62940) espnow_example: adc_raw2 = 1739[0m
+[0;32mI (62960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (63040) espnow_example: adc_raw2 = 1737[0m
+[0;32mI (63060) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (63140) espnow_example: adc_raw2 = 1744[0m
+[0;32mI (63160) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (63240) espnow_example: adc_raw2 = 1737[0m
+[0;32mI (63260) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (63340) espnow_example: adc_raw2 = 1733[0m
+[0;32mI (63360) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (63440) espnow_example: adc_raw2 = 1744[0m
+[0;32mI (63460) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (63540) espnow_example: adc_raw2 = 1747[0m
+[0;32mI (63550) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (63640) espnow_example: adc_raw2 = 1750[0m
+[0;32mI (63650) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (63740) espnow_example: adc_raw2 = 1723[0m
+[0;32mI (63750) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (63840) espnow_example: adc_raw2 = 1743[0m
+[0;32mI (63860) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (63940) espnow_example: adc_raw2 = 1735[0m
+[0;32mI (63950) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (64040) espnow_example: adc_raw2 = 1738[0m
+[0;32mI (64050) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (64140) espnow_example: adc_raw2 = 1729[0m
+[0;32mI (64160) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (64240) espnow_example: adc_raw2 = 1743[0m
+[0;32mI (64250) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (64340) espnow_example: adc_raw2 = 1735[0m
+[0;32mI (64350) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (64440) espnow_example: adc_raw2 = 1741[0m
+[0;32mI (64460) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (64540) espnow_example: adc_raw2 = 1749[0m
+[0;32mI (64550) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (64640) espnow_example: adc_raw2 = 1739[0m
+[0;32mI (64660) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (64740) espnow_example: adc_raw2 = 1744[0m
+[0;32mI (64750) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (64840) espnow_example: adc_raw2 = 1743[0m
+[0;32mI (64860) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (64940) espnow_example: adc_raw2 = 1734[0m
+[0;32mI (64950) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (65040) espnow_example: adc_raw2 = 1730[0m
+[0;32mI (65060) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (65140) espnow_example: adc_raw2 = 1744[0m
+[0;32mI (65160) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (65240) espnow_example: adc_raw2 = 1730[0m
+[0;32mI (65260) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (65340) espnow_example: adc_raw2 = 1729[0m
+[0;32mI (65350) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (65440) espnow_example: adc_raw2 = 1739[0m
+[0;32mI (65450) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (65540) espnow_example: adc_raw2 = 1733[0m
+[0;32mI (65560) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (65640) espnow_example: adc_raw2 = 1749[0m
+[0;32mI (65660) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (65740) espnow_example: adc_raw2 = 1743[0m
+[0;32mI (65760) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (65840) espnow_example: adc_raw2 = 1743[0m
+[0;32mI (65860) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (65940) espnow_example: adc_raw2 = 1749[0m
+[0;32mI (65960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (66040) espnow_example: adc_raw2 = 1735[0m
+[0;32mI (66060) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (66140) espnow_example: adc_raw2 = 1727[0m
+[0;32mI (66170) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (66240) espnow_example: adc_raw2 = 1737[0m
+[0;32mI (66260) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (66340) espnow_example: adc_raw2 = 1723[0m
+[0;32mI (66360) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (66440) espnow_example: adc_raw2 = 1715[0m
+[0;32mI (66460) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (66540) espnow_example: adc_raw2 = 1733[0m
+[0;32mI (66550) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (66640) espnow_example: adc_raw2 = 1745[0m
+[0;32mI (66660) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (66740) espnow_example: adc_raw2 = 1719[0m
+[0;32mI (66750) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (66840) espnow_example: adc_raw2 = 1762[0m
+[0;32mI (66850) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (66940) espnow_example: adc_raw2 = 1736[0m
+[0;32mI (66950) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (67040) espnow_example: adc_raw2 = 1751[0m
+[0;32mI (67050) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (67140) espnow_example: adc_raw2 = 1731[0m
+[0;32mI (67150) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (67240) espnow_example: adc_raw2 = 1731[0m
+[0;32mI (67250) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (67340) espnow_example: adc_raw2 = 1719[0m
+[0;32mI (67350) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (67440) espnow_example: adc_raw2 = 1722[0m
+[0;32mI (67450) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (67540) espnow_example: adc_raw2 = 1744[0m
+[0;32mI (67550) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (67640) espnow_example: adc_raw2 = 1734[0m
+[0;32mI (67650) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (67740) espnow_example: adc_raw2 = 1744[0m
+[0;32mI (67750) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (67840) espnow_example: adc_raw2 = 1727[0m
+[0;32mI (67860) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (67940) espnow_example: adc_raw2 = 1728[0m
+[0;32mI (67960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (68040) espnow_example: adc_raw2 = 1735[0m
+[0;32mI (68060) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (68140) espnow_example: adc_raw2 = 1731[0m
+[0;32mI (68150) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (68240) espnow_example: adc_raw2 = 1728[0m
+[0;32mI (68260) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (68340) espnow_example: adc_raw2 = 1743[0m
+[0;32mI (68350) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (68440) espnow_example: adc_raw2 = 1739[0m
+[0;32mI (68450) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (68540) espnow_example: adc_raw2 = 1744[0m
+[0;32mI (68550) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (68640) espnow_example: adc_raw2 = 1717[0m
+[0;32mI (68650) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (68740) espnow_example: adc_raw2 = 1735[0m
+[0;32mI (68760) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (68840) espnow_example: adc_raw2 = 1744[0m
+[0;32mI (68870) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (68940) espnow_example: adc_raw2 = 1741[0m
+[0;32mI (68960) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (69040) espnow_example: adc_raw2 = 1743[0m
+[0;32mI (69060) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (69140) espnow_example: adc_raw2 = 1730[0m
+[0;32mI (69160) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (69240) espnow_example: adc_raw2 = 1742[0m
+[0;32mI (69260) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (69340) espnow_example: adc_raw2 = 1744[0m
+[0;32mI (69360) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m
+[0;32mI (69440) espnow_example: adc_raw2 = 1737[0m
+[0;32mI (69460) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 1[0m

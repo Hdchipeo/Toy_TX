@@ -1,0 +1,453 @@
+0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xeets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug 24 2024 08:21:10[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1e560h (124256) map[0m
+[0;32mI (148) esp_image: segment 1: paddr=0002e588 vaddr=3ffb0000 size=01a90h (  6800) load[0m
+[0;32mI (151) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=7ddach (515500) map[0m
+[0;32mI (330) esp_image: segment 3: paddr=000addd4 vaddr=3ffb1a90 size=020d4h (  8404) load[0m
+[0;32mI (334) esp_image: segment 4: paddr=000afeb0 vaddr=40080000 size=167d8h ( 92120) load[0m
+[0;32mI (383) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (383) boot: Disabling RNG early entropy source...[0m
+[0;32mI (395) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) cpu_start: Application information:[0m
+[0;32mI (407) cpu_start: Project name:     espnow_example[0m
+[0;32mI (412) cpu_start: App version:      1[0m
+[0;32mI (417) cpu_start: Compile time:     Aug 24 2024 08:20:52[0m
+[0;32mI (423) cpu_start: ELF file SHA256:  d5229650e...[0m
+[0;32mI (428) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (434) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (439) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (444) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (449) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (456) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (462) heap_init: At 3FFB7C38 len 000283C8 (160 KiB): DRAM[0m
+[0;32mI (468) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (474) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (481) heap_init: At 400967D8 len 00009828 (38 KiB): IRAM[0m
+[0;32mI (488) spi_flash: detected chip: generic[0m
+[0;32mI (491) spi_flash: flash io: dio[0m
+[0;33mW (495) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (509) main_task: Started on CPU0[0m
+[0;32mI (519) main_task: Calling app_main()[0m
+I (549) wifi:wifi driver task: 3ffbf788, prio:23, stack:6656, core=0
+I (549) wifi:wifi firmware version: 3e0076f
+I (549) wifi:wifi certification version: v7.0
+I (549) wifi:config NVS flash: enabled
+I (549) wifi:config nano formating: disabled
+I (559) wifi:Init data frame dynamic rx buffer num: 32
+I (559) wifi:Init static rx mgmt buffer num: 5
+I (569) wifi:Init management short buffer num: 32
+I (569) wifi:Init dynamic tx buffer num: 32
+I (569) wifi:Init static rx buffer size: 1600
+I (579) wifi:Init static rx buffer num: 10
+I (579) wifi:Init dynamic rx buffer num: 32
+[0;32mI (589) wifi_init: rx ba win: 6[0m
+[0;32mI (589) wifi_init: tcpip mbox: 32[0m
+[0;32mI (589) wifi_init: udp mbox: 6[0m
+[0;32mI (599) wifi_init: tcp mbox: 6[0m
+[0;32mI (599) wifi_init: tcp tx win: 5760[0m
+[0;32mI (599) wifi_init: tcp rx win: 5760[0m
+[0;32mI (609) wifi_init: tcp mss: 1440[0m
+[0;32mI (609) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (619) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (619) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (719) wifi:mode : sta (e4:65:b8:11:7f:9c)
+I (719) wifi:enable tsf
+I (719) ESPNOW: espnow [version: 1.0] init
+[0;32mI (729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (1729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (2729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (3729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (4729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (5729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (6729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (7729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (8729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (9729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (10729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (11729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (12729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (13729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (14729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (15729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (16729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (17729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (18729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (19729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (20729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (21729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (22729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (23729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (24729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (25729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (26729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (27729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (28729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (29729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (30729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (31729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (32729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (33729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (34729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (35729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (36729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (37729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (38729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (39729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (40729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (41729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (42729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (43729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (44729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (45729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (46729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (47729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (48729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (49729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (50729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (51729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (52729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (53729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (54729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (55729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (56729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (57729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (58729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (59729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (60729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (61729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (62729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (63729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (64729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (65729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (66729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (67729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (68729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (69729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (70729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (71729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (72729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (73729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (74729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (75729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (76729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (77729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (78729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (79729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (80729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (81729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (82729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (83729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (84729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (85729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (86729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (87729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (88729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (89729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (90729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (91729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (92729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (93729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (94729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (95729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (96729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (97729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (98729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (99729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (100729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (101729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (102729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (103729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (104729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (105729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (106729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (107729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (108729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (109729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (110729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (111729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (112729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (113729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (114729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (115729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (116729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (117729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (118729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (119729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (120729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (121729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (122729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (123729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (124729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (125729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (126729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (127729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (128729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (129729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (130729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (131729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (132729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (133729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (134729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (135729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (136729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (137729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (138729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (139739) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (140729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (141729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (142729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (143729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (144729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (145729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (146729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (147729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (148729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (149729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (150729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (151729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (152729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (153729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (154729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (155729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (156729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (157729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (158729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (159729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (160729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (161729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (162729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (163729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (164729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (165729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (166729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (167729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (168729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (169729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (170729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (171729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (172729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (173729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (174729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (175729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (176729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (177729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (178729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (179729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (180729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (181729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (182729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (183729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (184729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (185729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (186729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (187729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (188729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (189729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (190729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (191729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (192729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (193729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (194729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (195729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (196729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (197729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (198729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (199729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (200729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (201729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (202729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (203729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (204729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (205729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (206729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (207729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (208729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (209729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (210729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (211729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (212729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (213729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (214729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (215729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (216729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (217729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (218729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (219729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (220729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (221729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (222729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (223729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (224729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (225729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (226729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (227729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (228729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (229729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (230729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (231729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (232729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (233729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (234729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (235729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (236729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (237729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (238729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (239729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (240729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (241729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (242729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (243729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (244729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (245729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (246729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (247729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (248729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (249729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (250729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (251729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (252729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (253729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (254729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (255729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (256729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (257729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (258729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (259729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (260729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (261729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (262729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (263729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (264729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (265729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (266729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (267729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (268729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (269729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (270729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (271729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (272729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (273729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (274729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (275729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (276729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (277729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (278729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (279729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (280729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (281729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (282729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (283729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (284729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (285729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (286729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (287729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (288729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (289729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (290729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (291729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (292729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (293729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (294729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (295729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (296729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (297729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (298729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (299729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (300729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (301729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (302729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (303729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (304729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (305729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (306729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (307729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (308729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (309729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (310729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (311729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (312729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (313729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (314729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (315729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (316729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (317729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (318729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (319729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (320729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (321729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (322729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (323729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (324729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (325729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (326729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (327729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (328729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (329729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (330729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (331729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (332729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (333729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (334729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (335729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (336729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (337729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (338729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (339729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (340729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (341729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (342729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (343729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (344729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (345729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (346729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (347729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (348729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (349729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (350729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (351729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (352729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (353729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (354729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (355729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (356729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (357729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (358729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (359729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (360729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (361729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (362729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (363729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (364729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (365729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (366729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (367729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (368729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (369729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m
+[0;32mI (370729) espnow_example: Send data to f0:f5:bd:fc:00:c8, status1: 0[0m

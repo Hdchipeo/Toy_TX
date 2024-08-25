@@ -1,0 +1,43 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\ESP32\Demo\toy_tx\build\bootloader\esp-idf\esptool_py && D:\ESP32\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/ESP32/Espressif/frameworks/esp-idf-v5.2.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/ESP32/Demo/toy_tx/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/espnow_example_main.c.obj
+D:/ESP32/Demo/toy_tx/main/espnow_example_main.c: In function 'app_main':
+D:/ESP32/Demo/toy_tx/main/espnow_example_main.c:339:38: warning: passing argument 2 of 'esp_now_send' from incompatible pointer type [-Wincompatible-pointer-types]
+  339 |          if (esp_now_send(peer_addr, &buffer, sizeof(buffer)) != ESP_OK)
+      |                                      ^~~~~~~
+      |                                      |
+      |                                      uint8_t (*)[10] {aka unsigned char (*)[10]}
+In file included from D:/ESP32/Demo/toy_tx/main/espnow_example_main.c:29:
+D:/ESP32/Espressif/frameworks/esp-idf-v5.2.2/components/esp_wifi/include/esp_now.h:212:65: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'uint8_t (*)[10]' {aka 'unsigned char (*)[10]'}
+  212 | esp_err_t esp_now_send(const uint8_t *peer_addr, const uint8_t *data, size_t len);
+      |                                                  ~~~~~~~~~~~~~~~^~~~
+D:/ESP32/Demo/toy_tx/main/espnow_example_main.c: At top level:
+D:/ESP32/Demo/toy_tx/main/espnow_example_main.c:313:13: warning: 'example_espnow_deinit' defined but not used [-Wunused-function]
+  313 | static void example_espnow_deinit(example_espnow_send_param_t *send_param)
+      |             ^~~~~~~~~~~~~~~~~~~~~
+D:/ESP32/Demo/toy_tx/main/espnow_example_main.c:85:13: warning: 'example_espnow_recv_cb' defined but not used [-Wunused-function]
+   85 | static void example_espnow_recv_cb(const esp_now_recv_info_t *recv_info, const uint8_t *data, int len)
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+[3/8] Linking C static library esp-idf\main\libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable espnow_example.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/ESP32/Demo/toy_tx/build/espnow_example.bin
+[7/8] cmd.exe /C "cd /D D:\ESP32\Demo\toy_tx\build\esp-idf\esptool_py && D:\ESP32\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/ESP32/Espressif/frameworks/esp-idf-v5.2.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/ESP32/Demo/toy_tx/build/partition_table/partition-table.bin D:/ESP32/Demo/toy_tx/build/espnow_example.bin"
+espnow_example.bin binary size 0xb6640 bytes. Smallest app partition is 0x100000 bytes. 0x499c0 bytes (29%) free.
+[7/8] cmd.exe /C "cd /D D:\ESP32\Espressif\frameworks\esp-idf-v5.2.2\components\esptool_py && D:\ESP32\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDesptool.py --chip esp32 -p COM14 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 espnow_example.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port COM14
+Connecting......................................
+
+A fatal error occurred: Failed to connect to ESP32: Wrong boot mode detected (0x13)! The chip needs to be in download mode.
+For troubleshooting steps visit: https://docs.espressif.com/projects/esptool/en/latest/troubleshooting.html
+F_PATH=D:/ESP32/Espressif/frameworks/esp-idf-v5.2.2 -D SERIAL_TOOL=D:/ESP32/Espressif/python_env/idf5.2_py3.11_env/Scripts/python.exe;;D:/ESP32/Espressif/frameworks/esp-idf-v5.2.2/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/ESP32/Demo/toy_tx/build -P D:/ESP32/Espressif/frameworks/esp-idf-v5.2.2/components/esptool_py/run_serial_tool.cmake"
+FAILED: CMakeFiles/flash D:/ESP32/Demo/toy_tx/build/CMakeFiles/flash 
+cmd.exe /C "cd /D D:\ESP32\Espressif\frameworks\esp-idf-v5.2.2\components\esptool_py && D:\ESP32\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=D:/ESP32/Espressif/frameworks/esp-idf-v5.2.2 -D SERIAL_TOOL=D:/ESP32/Espressif/python_env/idf5.2_py3.11_env/Scripts/python.exe;;D:/ESP32/Espressif/frameworks/esp-idf-v5.2.2/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/ESP32/Demo/toy_tx/build -P D:/ESP32/Espressif/frameworks/esp-idf-v5.2.2/components/esptool_py/run_serial_tool.cmake"
+ninja: build stopped: subcommand failed.

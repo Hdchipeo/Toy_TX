@@ -1,0 +1,35 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\ESP32\Demo\toy_tx\build\bootloader\esp-idf\esptool_py && D:\ESP32\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/ESP32/Espressif/frameworks/esp-idf-v5.2.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/ESP32/Demo/toy_tx/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/espnow_example_main.c.obj
+D:/ESP32/Demo/toy_tx/main/espnow_example_main.c: In function 'example_espnow_init':
+D:/ESP32/Demo/toy_tx/main/espnow_example_main.c:307:17: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
+  307 |     xTaskCreate(example_espnow_task, "example_espnow_task", 2048, NULL, 4, NULL);
+      |                 ^~~~~~~~~~~~~~~~~~~
+      |                 |
+      |                 void (*)(void)
+In file included from D:/ESP32/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/esp_additions/include/freertos/idf_additions.h:20,
+                 from D:/ESP32/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:1533,
+                 from D:/ESP32/Demo/toy_tx/main/espnow_example_main.c:19:
+D:/ESP32/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:371:44: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (*)(void)'
+  371 |     BaseType_t xTaskCreate( TaskFunction_t pxTaskCode,
+      |                             ~~~~~~~~~~~~~~~^~~~~~~~~~
+D:/ESP32/Demo/toy_tx/main/espnow_example_main.c: At top level:
+D:/ESP32/Demo/toy_tx/main/espnow_example_main.c:312:13: warning: 'example_espnow_deinit' defined but not used [-Wunused-function]
+  312 | static void example_espnow_deinit(example_espnow_send_param_t *send_param)
+      |             ^~~~~~~~~~~~~~~~~~~~~
+D:/ESP32/Demo/toy_tx/main/espnow_example_main.c:84:13: warning: 'example_espnow_recv_cb' defined but not used [-Wunused-function]
+   84 | static void example_espnow_recv_cb(const esp_now_recv_info_t *recv_info, const uint8_t *data, int len)
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+[3/8] Linking C static library esp-idf\main\libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Building C object CMakeFiles/espnow_example.elf.dir/project_elf_src_esp32.c.obj
+[6/8] Linking CXX executable espnow_example.elf
+[7/8] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/ESP32/Demo/toy_tx/build/espnow_example.bin
+[8/8] cmd.exe /C "cd /D D:\ESP32\Demo\toy_tx\build\esp-idf\esptool_py && D:\ESP32\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/ESP32/Espressif/frameworks/esp-idf-v5.2.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/ESP32/Demo/toy_tx/build/partition_table/partition-table.bin D:/ESP32/Demo/toy_tx/build/espnow_example.bin"
+espnow_example.bin binary size 0xb5d30 bytes. Smallest app partition is 0x100000 bytes. 0x4a2d0 bytes (29%) free.

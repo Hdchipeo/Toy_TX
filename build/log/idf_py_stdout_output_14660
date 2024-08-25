@@ -1,0 +1,196 @@
+0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xeets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug 24 2024 08:21:10[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1e540h (124224) map[0m
+[0;32mI (148) esp_image: segment 1: paddr=0002e568 vaddr=3ffb0000 size=01ab0h (  6832) load[0m
+[0;32mI (151) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=7dd88h (515464) map[0m
+[0;32mI (330) esp_image: segment 3: paddr=000addb0 vaddr=3ffb1ab0 size=020b4h (  8372) load[0m
+[0;32mI (334) esp_image: segment 4: paddr=000afe6c vaddr=40080000 size=167d8h ( 92120) load[0m
+[0;32mI (383) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (383) boot: Disabling RNG early entropy source...[0m
+[0;32mI (395) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) cpu_start: Application information:[0m
+[0;32mI (407) cpu_start: Project name:     espnow_example[0m
+[0;32mI (412) cpu_start: App version:      1[0m
+[0;32mI (417) cpu_start: Compile time:     Aug 24 2024 08:20:52[0m
+[0;32mI (423) cpu_start: ELF file SHA256:  c82257428...[0m
+[0;32mI (428) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (434) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (439) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (444) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (449) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (456) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (462) heap_init: At 3FFB7C38 len 000283C8 (160 KiB): DRAM[0m
+[0;32mI (468) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (474) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (481) heap_init: At 400967D8 len 00009828 (38 KiB): IRAM[0m
+[0;32mI (488) spi_flash: detected chip: generic[0m
+[0;32mI (491) spi_flash: flash io: dio[0m
+[0;33mW (495) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (509) main_task: Started on CPU0[0m
+[0;32mI (519) main_task: Calling app_main()[0m
+I (549) wifi:wifi driver task: 3ffbf788, prio:23, stack:6656, core=0
+I (549) wifi:wifi firmware version: 3e0076f
+I (549) wifi:wifi certification version: v7.0
+I (549) wifi:config NVS flash: enabled
+I (549) wifi:config nano formating: disabled
+I (559) wifi:Init data frame dynamic rx buffer num: 32
+I (559) wifi:Init static rx mgmt buffer num: 5
+I (569) wifi:Init management short buffer num: 32
+I (569) wifi:Init dynamic tx buffer num: 32
+I (569) wifi:Init static rx buffer size: 1600
+I (579) wifi:Init static rx buffer num: 10
+I (579) wifi:Init dynamic rx buffer num: 32
+[0;32mI (589) wifi_init: rx ba win: 6[0m
+[0;32mI (589) wifi_init: tcpip mbox: 32[0m
+[0;32mI (589) wifi_init: udp mbox: 6[0m
+[0;32mI (599) wifi_init: tcp mbox: 6[0m
+[0;32mI (599) wifi_init: tcp tx win: 5760[0m
+[0;32mI (599) wifi_init: tcp rx win: 5760[0m
+[0;32mI (609) wifi_init: tcp mss: 1440[0m
+[0;32mI (609) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (619) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (619) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (719) wifi:mode : sta (e4:65:b8:11:7f:9c)
+I (719) wifi:enable tsf
+I (729) ESPNOW: espnow [version: 1.0] init
+[0;32mI (729) espnow_example: Send done[0m
+[0;32mI (1729) espnow_example: Send done[0m
+[0;32mI (2729) espnow_example: Send done[0m
+[0;32mI (3729) espnow_example: Send done[0m
+[0;32mI (4729) espnow_example: Send done[0m
+[0;32mI (5729) espnow_example: Send done[0m
+[0;32mI (6729) espnow_example: Send done[0m
+[0;32mI (7729) espnow_example: Send done[0m
+[0;32mI (8729) espnow_example: Send done[0m
+[0;32mI (9729) espnow_example: Send done[0m
+[0;32mI (10729) espnow_example: Send done[0m
+[0;32mI (11729) espnow_example: Send done[0m
+[0;32mI (12729) espnow_example: Send done[0m
+[0;32mI (13729) espnow_example: Send done[0m
+[0;32mI (14729) espnow_example: Send done[0m
+[0;32mI (15729) espnow_example: Send done[0m
+[0;32mI (16729) espnow_example: Send done[0m
+[0;32mI (17729) espnow_example: Send done[0m
+[0;32mI (18729) espnow_example: Send done[0m
+[0;32mI (19729) espnow_example: Send done[0m
+[0;32mI (20729) espnow_example: Send done[0m
+[0;32mI (21729) espnow_example: Send done[0m
+[0;32mI (22729) espnow_example: Send done[0m
+[0;32mI (23729) espnow_example: Send done[0m
+[0;32mI (24729) espnow_example: Send done[0m
+[0;32mI (25729) espnow_example: Send done[0m
+[0;32mI (26729) espnow_example: Send done[0m
+[0;32mI (27729) espnow_example: Send done[0m
+[0;32mI (28729) espnow_example: Send done[0m
+[0;32mI (29729) espnow_example: Send done[0m
+[0;32mI (30729) espnow_example: Send done[0m
+[0;32mI (31729) espnow_example: Send done[0m
+[0;32mI (32729) espnow_example: Send done[0m
+[0;32mI (33729) espnow_example: Send done[0m
+[0;32mI (34729) espnow_example: Send done[0m
+[0;32mI (35729) espnow_example: Send done[0m
+[0;32mI (36729) espnow_example: Send done[0m
+[0;32mI (37729) espnow_example: Send done[0m
+[0;32mI (38729) espnow_example: Send done[0m
+[0;32mI (39729) espnow_example: Send done[0m
+[0;32mI (40729) espnow_example: Send done[0m
+[0;32mI (41729) espnow_example: Send done[0m
+[0;32mI (42729) espnow_example: Send done[0m
+[0;32mI (43729) espnow_example: Send done[0m
+[0;32mI (44729) espnow_example: Send done[0m
+[0;32mI (45729) espnow_example: Send done[0m
+[0;32mI (46729) espnow_example: Send done[0m
+[0;32mI (47729) espnow_example: Send done[0m
+[0;32mI (48729) espnow_example: Send done[0m
+[0;32mI (49729) espnow_example: Send done[0m
+[0;32mI (50729) espnow_example: Send done[0m
+[0;32mI (51729) espnow_example: Send done[0m
+[0;32mI (52729) espnow_example: Send done[0m
+[0;32mI (53729) espnow_example: Send done[0m
+[0;32mI (54729) espnow_example: Send done[0m
+[0;32mI (55729) espnow_example: Send done[0m
+[0;32mI (56729) espnow_example: Send done[0m
+[0;32mI (57729) espnow_example: Send done[0m
+[0;32mI (58729) espnow_example: Send done[0m
+[0;32mI (59729) espnow_example: Send done[0m
+[0;32mI (60729) espnow_example: Send done[0m
+[0;32mI (61729) espnow_example: Send done[0m
+[0;32mI (62729) espnow_example: Send done[0m
+[0;32mI (63729) espnow_example: Send done[0m
+[0;32mI (64729) espnow_example: Send done[0m
+[0;32mI (65729) espnow_example: Send done[0m
+[0;32mI (66729) espnow_example: Send done[0m
+[0;32mI (67729) espnow_example: Send done[0m
+[0;32mI (68729) espnow_example: Send done[0m
+[0;32mI (69729) espnow_example: Send done[0m
+[0;32mI (70729) espnow_example: Send done[0m
+[0;32mI (71729) espnow_example: Send done[0m
+[0;32mI (72729) espnow_example: Send done[0m
+[0;32mI (73729) espnow_example: Send done[0m
+[0;32mI (74729) espnow_example: Send done[0m
+[0;32mI (75729) espnow_example: Send done[0m
+[0;32mI (76729) espnow_example: Send done[0m
+[0;32mI (77729) espnow_example: Send done[0m
+[0;32mI (78729) espnow_example: Send done[0m
+[0;32mI (79729) espnow_example: Send done[0m
+[0;32mI (80729) espnow_example: Send done[0m
+[0;32mI (81729) espnow_example: Send done[0m
+[0;32mI (82729) espnow_example: Send done[0m
+[0;32mI (83729) espnow_example: Send done[0m
+[0;32mI (84729) espnow_example: Send done[0m
+[0;32mI (85729) espnow_example: Send done[0m
+[0;32mI (86729) espnow_example: Send done[0m
+[0;32mI (87729) espnow_example: Send done[0m
+[0;32mI (88729) espnow_example: Send done[0m
+[0;32mI (89729) espnow_example: Send done[0m
+[0;32mI (90729) espnow_example: Send done[0m
+[0;32mI (91729) espnow_example: Send done[0m
+[0;32mI (92729) espnow_example: Send done[0m
+[0;32mI (93729) espnow_example: Send done[0m
+[0;32mI (94729) espnow_example: Send done[0m
+[0;32mI (95729) espnow_example: Send done[0m
+[0;32mI (96729) espnow_example: Send done[0m
+[0;32mI (97729) espnow_example: Send done[0m
+[0;32mI (98729) espnow_example: Send done[0m
+[0;32mI (99729) espnow_example: Send done[0m
+[0;32mI (100729) espnow_example: Send done[0m
+[0;32mI (101729) espnow_example: Send done[0m
+[0;32mI (102729) espnow_example: Send done[0m
+[0;32mI (103729) espnow_example: Send done[0m
+[0;32mI (104729) espnow_example: Send done[0m
+[0;32mI (105729) espnow_example: Send done[0m
+[0;32mI (106729) espnow_example: Send done[0m
+[0;32mI (107729) espnow_example: Send done[0m
+[0;32mI (108729) espnow_example: Send done[0m
+[0;32mI (109729) espnow_example: Send done[0m
+[0;32mI (110729) espnow_example: Send done[0m
+[0;32mI (111729) espnow_example: Send done[0m
+[0;32mI (112729) espnow_example: Send done[0m
+[0;32mI (113729) espnow_example: Send done[0m
